@@ -32,3 +32,8 @@ for result in results:
 
 for element in filtered_search_results:
     print(element)
+
+
+GET: {download_links["GET"]}\n
+Cloudflare: {download_links['Cloudflare']}\n
+IPFS: {download_links["IPFS.io"]}\n{"-"*20}

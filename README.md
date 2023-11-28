@@ -1,9 +1,9 @@
-#Broke Book Bot
+# Broke Book Bot
 
-##Description
+## Description
 This a telegram bot to download books or send books via email to kindle.
 
-##Installation
+## Installation
 Use pip to install all neccessary dependencies.
 ```bash
 pip install -r requirements.txt

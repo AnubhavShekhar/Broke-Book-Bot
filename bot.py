@@ -4,6 +4,8 @@ from dotenv import load_dotenv
 from telebot import types
 from libgen_api import LibgenSearch
 from icecream import ic
+from helper_functions import Records
+from random import choice
 
 load_dotenv()
 
@@ -13,7 +15,8 @@ bot = telebot.TeleBot(API_TOKEN)
 
 @bot.message_handler(commands= ["start"])
 def start_book_bot(message):
-    bot.reply_to(message, "Hello I am the broke mans book bot!")
+    gifs = ["https://media.giphy.com/media/Vbtc9VG51NtzT1Qnv1/giphy.gif","https://media.giphy.com/media/xTiIzJSKB4l7xTouE8/giphy.gif","https://media.giphy.com/media/mW05nwEyXLP0Y/giphy.gif"]
+    bot.send_animation(message.chat.id, choice(gifs), caption= "Hello there, Broke ass nigga.\n I shall bestow upon you, Knowledge.🤯")
     button1 = types.BotCommand(command="start", description="Start the Bot")
     button2 = types.BotCommand(command="search", description="Name of book to be queried")
     button3 = types.BotCommand(command="help", description="Click for help")
@@ -22,35 +25,27 @@ def start_book_bot(message):
 
 @bot.message_handler(commands=["help"])
 def help_book_bot(message):
-    bot.reply_to(message, "Nothing to see here.. Help yourself ;)")
+    help_gif = "https://media.giphy.com/media/1zjON7WqVVeKwlIGbT/giphy.gif"
+    bot.send_animation(message.chat.id, help_gif, caption="Nothing to see here. Help yourself." )
 
 @bot.message_handler(commands=['search'])
 def search_book_bot(message):
     query_lst = message.text.split()
     query_lst = query_lst[1:]
     query = " ".join(query_lst)
-    s = LibgenSearch()
-    results = s.search_title(query)
-    filtered_search_results = []
-
-    for result in results:
-        download_links = s.resolve_download_links(result)
-        formatting = f"""
-Title: {result['Title']}\n
-Author : {result['Author']}\n
-Year: {result['Year']}\n
-Extension: {result['Extension']}\n
-Direct Download Links:\n
-GET: {download_links["GET"]}\n
-Cloudflare: {download_links['Cloudflare']}\n
-IPFS: {download_links["IPFS.io"]}\n{"-"*20}
-                    """
-        filtered_search_results.append(formatting)
-        if result == results[3]:
-            break
-
-    reply = "\n".join(filtered_search_results)
+    search = Records(query)
+    search.get_records()
     bot.reply_to(message, "Here are the results")
-    bot.send_message(message.chat.id, reply)
-
-bot.polling()
+    markup = types.InlineKeyboardMarkup(row_width=1)
+    download_buttons = [
+        types.InlineKeyboardButton("GET", url=search.download_links["GET"]),
+        types.InlineKeyboardButton("Cloudflare", url=search.download_links["Cloudflare"]),
+        types.InlineKeyboardButton("IPFS", url=search.download_links["IPFS.io"])
+    ]
+    next_button = types.InlineKeyboardButton("Next ⏩", callback_data="Next")
+    back_button = types.InlineKeyboardButton("Back 🔙", callback_data="Back")
+    markup.add(*download_buttons)
+    markup.add(back_button, next_button, row_width=2)
+    bot.send_message(message.chat.id, search.reply, reply_markup=markup)
+    
+bot.infinity_polling()
