@@ -3,9 +3,9 @@ import logging
 import json
 
 
-class Records:
+class LibgenRecords:
 
-    def __init__(self, query: str, record_pool) -> None:
+    def __init__(self, query: str, record_pool, pointer_pool) -> None:
         """
         Initialize the variables
         """
@@ -15,7 +15,7 @@ class Records:
         self.formatted_records = []
         self.download_links = []
         self.reply_text = ""
-        self.pointer = 0
+        self.pointer_pool = pointer_pool
 
     def initialize_records(self, uid: str) -> None:
         """
@@ -24,11 +24,12 @@ class Records:
         """
 
         self.records[str(uid)] = self.libgen.search_title(self.query)
+        self.pointer_pool[str(uid)] = 0
         logging.info(
             f"{self.initialize_records.__name__} | Records initialized")
         logging.info(json.dumps(self.records, indent=2))
 
-    def get_records(self, flag: int, uid: str) -> [str, list]:
+    def get_records(self, flag: int, uid: str, loc: int = None) -> [str, list]:
         """
         Get initial records when flag == 0
         Get next record when flag == 1
@@ -36,44 +37,49 @@ class Records:
         """
 
         if flag == 0:
-            logging.info(f"Current pointer (START) : {self.pointer}")
+            logging.info(
+                f"Current pointer (START) : {self.pointer_pool[str(uid)]}")
             self.reply_text = self.get_formatted_text(uid)
             self.download_links = self.libgen.resolve_download_links(
                 self.records[uid][0])
-            return self.reply_text, self.download_links, self.pointer
+            return self.reply_text, self.download_links
 
         elif flag == -1:
-            self.pointer -= 1
-            logging.info(f"Current pointer : {self.pointer}")
 
-            if self.pointer >= 0:
+            self.pointer_pool[str(uid)] -= 1
+
+            logging.info(f"Current pointer : {self.pointer_pool[str(uid)]}")
+
+            if self.pointer_pool[str(uid)] >= 0:
                 self.reply_text = self.get_formatted_text(uid)
                 self.download_links = self.libgen.resolve_download_links(
-                    self.records[uid][self.pointer])
-                return self.reply_text, self.download_links, self.pointer
+                    self.records[uid][self.pointer_pool[str(uid)]])
+                return self.reply_text, self.download_links
 
             else:
                 logging.info(
                     f"{self.get_records.__name__} | No more previous records.")
                 self.reply_text = "No more previous records!"
                 self.download_links = None
-                return self.reply_text, self.download_links, self.pointer
+                return self.reply_text, self.download_links
 
         elif flag == 1:
-            self.pointer += 1
-            logging.info(f"Current pointer : {self.pointer}")
 
-            if self.pointer <= len(self.records[uid])-1:
+            self.pointer_pool[str(uid)] += 1
+
+            logging.info(f"Current pointer : {self.pointer_pool[str(uid)]}")
+
+            if self.pointer_pool[str(uid)] <= len(self.records[uid])-1:
                 self.reply_text = self.get_formatted_text(uid)
                 self.download_links = self.libgen.resolve_download_links(
-                    self.records[uid][self.pointer])
-                return self.reply_text, self.download_links, self.pointer
+                    self.records[uid][self.pointer_pool[str(uid)]])
+                return self.reply_text, self.download_links
 
             else:
                 logging.info(f"{self.get_records.__name__} | No more records!")
                 self.reply_text = "No more next records!"
                 self.download_links = None
-                return self.reply_text, self.download_links, self.pointer
+                return self.reply_text, self.download_links
         else:
             logging.warning("Invalid flag!")
 
@@ -81,12 +87,12 @@ class Records:
         """
         Get the formatted text 
         """
-        title = self.records[uid][self.pointer]['Title']
-        author = self.records[uid][self.pointer]['Author']
-        year = self.records[uid][self.pointer]['Year']
-        ext = self.records[uid][self.pointer]['Extension']
+        title = self.records[uid][self.pointer_pool[str(uid)]]['Title']
+        author = self.records[uid][self.pointer_pool[str(uid)]]['Author']
+        year = self.records[uid][self.pointer_pool[str(uid)]]['Year']
+        ext = self.records[uid][self.pointer_pool[str(uid)]]['Extension']
 
-        formatted_text = f"*RESULTS [{self.pointer+1}/{len(self.records[uid])}]*\n➖➖➖➖➖➖\n*Title*: _{title}_"
+        formatted_text = f"*RESULTS [{self.pointer_pool[str(uid)]+1}/{len(self.records[uid])}]*\n➖➖➖➖➖➖\n*Title*: _{title}_"
 
         if author:
             formatted_text += f"\n\n*Author* : _{author}_"
@@ -102,9 +108,9 @@ class Records:
         Resets the pointer and clears records and download links
         """
 
-        self.pointer = 0
+        self.pointer_pool[str(uid)] = 0
         logging.info(
-            f"{self.reset.__name__} | Pointer reset! | {self.pointer}")
+            f"{self.reset.__name__} | Pointer reset! | {self.pointer_pool[str(uid)]}")
 
         self.records[uid] = []
         logging.info(

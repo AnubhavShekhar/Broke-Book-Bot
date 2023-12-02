@@ -2,7 +2,7 @@ import os
 import telebot
 from dotenv import load_dotenv
 from telebot import types
-from helper_functions import Records
+from helper_functions import LibgenRecords
 from random import choice
 import logging
 
@@ -30,6 +30,7 @@ logging.basicConfig(filename="status.log", level=logging.INFO,
 bot = telebot.TeleBot(API_TOKEN)
 search = None
 record_pool = {}
+pointer_pool = {}
 
 print('Bot Started')
 
@@ -79,6 +80,7 @@ def search_book_bot(message):
     """
     global search
     global record_pool
+    global pointer_pool
 
     user_name = message.from_user.username
     user_id = str(message.from_user.id)
@@ -92,17 +94,20 @@ def search_book_bot(message):
     if user_id not in record_pool:
         record_pool.update({f'{user_id}': []})
 
+    if user_id not in pointer_pool:
+        pointer_pool.update({f'{user_id}': 0})
+
     if len(query) > 0:
 
         logging.info(f"{search_book_bot.__name__} | Querying {query}...")
-        search = Records(query, record_pool)
+        search = LibgenRecords(query, record_pool, pointer_pool)
         search.reset(user_id)
         search.initialize_records(user_id)
 
         reply = "_Please wait, results are being fetched_"
         bot.reply_to(message, reply, parse_mode='Markdown')
 
-        reply_text, download_links, pointer = search.get_records(0, user_id)
+        reply_text, download_links = search.get_records(0, user_id)
         bot.edit_message_text(text=f"Here are the results. @{user_name}",
                               chat_id=chat_id,
                               message_id=message_id+1)
@@ -133,7 +138,7 @@ def search_book_bot(message):
         user_id = str(call.from_user.id)
 
         logging.info(f"{next_btn.__name__} | Getting next result..")
-        reply_text, download_links, pointer = search.get_records(1, user_id)
+        reply_text, download_links = search.get_records(1, user_id)
         if download_links != None:
             markup = types.InlineKeyboardMarkup(row_width=1)
             download_buttons = [
@@ -149,7 +154,7 @@ def search_book_bot(message):
             back_button = types.InlineKeyboardButton(
                 "Back 🔙", callback_data="Back")
             markup.add(*download_buttons, row_width=3)
-            if pointer >= len(record_pool[user_id])-1:
+            if pointer_pool[str(user_id)] >= len(record_pool[user_id])-1:
                 markup.add(back_button, row_width=1)
             else:
                 markup.add(back_button, next_button, row_width=2)
@@ -175,7 +180,7 @@ def search_book_bot(message):
         user_id = str(call.from_user.id)
 
         logging.info(f"{back_btn.__name__} | Getting previous result..")
-        reply_text, download_links, pointer = search.get_records(-1, user_id)
+        reply_text, download_links = search.get_records(-1, user_id)
         if download_links != None:
             markup = types.InlineKeyboardMarkup(row_width=1)
             download_buttons = [
@@ -191,7 +196,7 @@ def search_book_bot(message):
             back_button = types.InlineKeyboardButton(
                 "Back 🔙", callback_data="Back")
             markup.add(*download_buttons, row_width=3)
-            if pointer <= 0:
+            if pointer_pool[str(user_id)] <= 0:
                 markup.add(next_button, row_width=1)
             else:
                 markup.add(back_button, next_button, row_width=2)
