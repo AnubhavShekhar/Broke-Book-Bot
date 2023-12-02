@@ -1,0 +1,1530 @@
+02-Dec-23 09:59:08 - start_book_bot | wooomba | 1812947382 has started the bot!
+02-Dec-23 09:59:10 - start_book_bot | Menu Commands have been initialized.
+02-Dec-23 09:59:12 - start_book_bot | wooomba | 1812947382 has started the bot!
+02-Dec-23 09:59:13 - start_book_bot | Menu Commands have been initialized.
+02-Dec-23 09:59:17 - search_book_bot | Querying quran...
+02-Dec-23 09:59:17 - reset | Pointer reset! | 0
+02-Dec-23 09:59:17 - reset | Records cleared! | []
+02-Dec-23 09:59:17 - reset | Download links cleared! | []
+02-Dec-23 09:59:18 - initialize_records | Records initialized
+02-Dec-23 09:59:18 - {
+  "1812947382": [
+    {
+      "ID": "225492",
+      "Author": "Dr. Muhammad Taqi-ud-Din Al-Hilali,Dr. Muhammad Muhsin Khan",
+      "Title": "THE NOBLE QURAN [with recitation]",
+      "Publisher": "",
+      "Year": "",
+      "Pages": "979",
+      "Language": "English",
+      "Size": "192 Mb",
+      "Extension": "pdf",
+      "Mirror_1": "http://library.lol/main/5DE9689002C8D64DB8B97A81FAA76C82",
+      "Mirror_2": "http://libgen.li/ads.php?md5=5DE9689002C8D64DB8B97A81FAA76C82",
+      "Mirror_3": "https://library.bz/main/edit/5DE9689002C8D64DB8B97A81FAA76C82"
+    },
+    {
+      "ID": "225517",
+      "Author": "Oliver Leaman",
+      "Title": "The Quran - An Encyclopedia",
+      "Publisher": "Routledge",
+      "Year": "2005",
+      "Pages": "801",
+      "Language": "English",
+      "Size": "4 Mb",
+      "Extension": "pdf",
+      "Mirror_1": "http://library.lol/main/5AF3E1C26F0732A8613CF1B8533B7E5B",
+      "Mirror_2": "http://libgen.li/ads.php?md5=5AF3E1C26F0732A8613CF1B8533B7E5B",
+      "Mirror_3": "https://library.bz/main/edit/5AF3E1C26F0732A8613CF1B8533B7E5B"
+    },
+    {
+      "ID": "241156",
+      "Author": "Dr. Muhammad Taqi-ud-Din Al-Hilali,Dr. Muhammad Muhsin Khan",
+      "Title": "Islam Holy Quran Coran Kuran Koran Arabic Arab Islamic",
+      "Publisher": "",
+      "Year": "",
+      "Pages": "1033",
+      "Language": "English",
+      "Size": "19 Mb",
+      "Extension": "pdf",
+      "Mirror_1": "http://library.lol/main/C7C73DFA6282DAEC418B9DA2DDA48B61",
+      "Mirror_2": "http://libgen.li/ads.php?md5=C7C73DFA6282DAEC418B9DA2DDA48B61",
+      "Mirror_3": "https://library.bz/main/edit/C7C73DFA6282DAEC418B9DA2DDA48B61"
+    },
+    {
+      "ID": "245435",
+      "Author": "",
+      "Title": "Islam Holy Quran Coran Kuran Koran Arabic Arab Islamic Sunna Moslem Muslim - Persian Iran Language Kuran Coran Quran",
+      "Publisher": "",
+      "Year": "",
+      "Pages": "928",
+      "Language": "English",
+      "Size": "31 Mb",
+      "Extension": "pdf",
+      "Mirror_1": "http://library.lol/main/318CEEA1A536EAB1CF4D68023B4F5F90",
+      "Mirror_2": "http://libgen.li/ads.php?md5=318CEEA1A536EAB1CF4D68023B4F5F90",
+      "Mirror_3": "https://library.bz/main/edit/318CEEA1A536EAB1CF4D68023B4F5F90"
+    },
+    {
+      "ID": "245436",
+      "Author": "Sahih Al Bukhari",
+      "Title": "Islam Holy Quran Coran Kuran Koran Arabic Arab Islamic Sunna Moslem Muslim",
+      "Publisher": "",
+      "Year": "",
+      "Pages": "1301",
+      "Language": "English",
+      "Size": "10 Mb",
+      "Extension": "pdf",
+      "Mirror_1": "http://library.lol/main/1C70AC655CC5D401F181A987952EBE65",
+      "Mirror_2": "http://libgen.li/ads.php?md5=1C70AC655CC5D401F181A987952EBE65",
+      "Mirror_3": "https://library.bz/main/edit/1C70AC655CC5D401F181A987952EBE65"
+    },
+    {
+      "ID": "245437",
+      "Author": "Sahih Al Bukhari",
+      "Title": "Islam holy quran coran kuran koran arabic arab islamic sunna moslem muslim",
+      "Publisher": "",
+      "Year": "",
+      "Pages": "1927",
+      "Language": "English",
+      "Size": "3 Mb",
+      "Extension": "pdf",
+      "Mirror_1": "http://library.lol/main/47240D3AE7B7D88E35690A77BFAD7D72",
+      "Mirror_2": "http://libgen.li/ads.php?md5=47240D3AE7B7D88E35690A77BFAD7D72",
+      "Mirror_3": "https://library.bz/main/edit/47240D3AE7B7D88E35690A77BFAD7D72"
+    },
+    {
+      "ID": "245438",
+      "Author": "Sahih Al Bukhari",
+      "Title": "Islam Holy Quran Coran Kuran Koran Arabic Arab Islamic Sunna Moslem Muslim - Sahih el Boukhari-2",
+      "Publisher": "",
+      "Year": "",
+      "Pages": "312",
+      "Language": "English",
+      "Size": "3 Mb",
+      "Extension": "pdf",
+      "Mirror_1": "http://library.lol/main/1213C3129C7DB31EE1DAD13D9535F96B",
+      "Mirror_2": "http://libgen.li/ads.php?md5=1213C3129C7DB31EE1DAD13D9535F96B",
+      "Mirror_3": "https://library.bz/main/edit/1213C3129C7DB31EE1DAD13D9535F96B"
+    },
+    {
+      "ID": "247437",
+      "Author": "McAuliffe",
+      "Title": "Encyclopaedia of the Quran. E-I",
+      "Publisher": "",
+      "Year": "2002",
+      "Pages": "598",
+      "Language": "English",
+      "Size": "11 Mb",
+      "Extension": "pdf",
+      "Mirror_1": "http://library.lol/main/4A4191CAC83F82C2743B3C38B0CB44B1",
+      "Mirror_2": "http://libgen.li/ads.php?md5=4A4191CAC83F82C2743B3C38B0CB44B1",
+      "Mirror_3": "https://library.bz/main/edit/4A4191CAC83F82C2743B3C38B0CB44B1"
+    },
+    {
+      "ID": "247438",
+      "Author": "McAuliffe",
+      "Title": "Encyclopaedia of the Quran Si-Z",
+      "Publisher": "",
+      "Year": "2006",
+      "Pages": "596",
+      "Language": "English",
+      "Size": "11 Mb",
+      "Extension": "pdf",
+      "Mirror_1": "http://library.lol/main/F6AD5FCCEDF155A1433DF8D8F4AA5708",
+      "Mirror_2": "http://libgen.li/ads.php?md5=F6AD5FCCEDF155A1433DF8D8F4AA5708",
+      "Mirror_3": "https://library.bz/main/edit/F6AD5FCCEDF155A1433DF8D8F4AA5708"
+    },
+    {
+      "ID": "249293",
+      "Author": "Abdullah Saeed",
+      "Title": "Interpreting Quran",
+      "Publisher": "Routledge",
+      "Year": "2005",
+      "Pages": "206",
+      "Language": "English",
+      "Size": "1 Mb",
+      "Extension": "pdf",
+      "Mirror_1": "http://library.lol/main/3E72C60DEBE1500FB05A815213CC48D6",
+      "Mirror_2": "http://libgen.li/ads.php?md5=3E72C60DEBE1500FB05A815213CC48D6",
+      "Mirror_3": "https://library.bz/main/edit/3E72C60DEBE1500FB05A815213CC48D6"
+    },
+    {
+      "ID": "266274",
+      "Author": "Saeed Ali Al-Qahtani",
+      "Title": "The Supreme Triumph and the Evident Loss in the Light of the Quran and the Sunnah",
+      "Publisher": "International Lslamic Publishing House",
+      "Year": "1999",
+      "Pages": "476",
+      "Language": "English",
+      "Size": "15 Mb",
+      "Extension": "pdf",
+      "Mirror_1": "http://library.lol/main/105CBB37A13A6476CD166052AD5D2D54",
+      "Mirror_2": "http://libgen.li/ads.php?md5=105CBB37A13A6476CD166052AD5D2D54",
+      "Mirror_3": "https://library.bz/main/edit/105CBB37A13A6476CD166052AD5D2D54"
+    },
+    {
+      "ID": "276900",
+      "Author": "Shawqi Abu Khalil",
+      "Title": "Atlas al-Quran: Amakin, aqwam, alam (Arabic Edition)",
+      "Publisher": "Dar al-Fikr al-Muasir",
+      "Year": "2000",
+      "Pages": "335",
+      "Language": "Arabic",
+      "Size": "26 Mb",
+      "Extension": "pdf",
+      "Mirror_1": "http://library.lol/main/FC903DAE20A2CAFF1DA46E6AA08298D7",
+      "Mirror_2": "http://libgen.li/ads.php?md5=FC903DAE20A2CAFF1DA46E6AA08298D7",
+      "Mirror_3": "https://library.bz/main/edit/FC903DAE20A2CAFF1DA46E6AA08298D7"
+    },
+    {
+      "ID": "404786",
+      "Author": "Mufti Muhammad Shafi",
+      "Title": "Ma'ariful Quran Volume 5",
+      "Publisher": "",
+      "Year": "",
+      "Pages": "342",
+      "Language": "Urdu",
+      "Size": "42 Mb",
+      "Extension": "pdf",
+      "Mirror_1": "http://library.lol/main/8116852A83DFA433278FDBC2C89A6D70",
+      "Mirror_2": "http://libgen.li/ads.php?md5=8116852A83DFA433278FDBC2C89A6D70",
+      "Mirror_3": "https://library.bz/main/edit/8116852A83DFA433278FDBC2C89A6D70"
+    },
+    {
+      "ID": "422275",
+      "Author": "A?mad Zaki Man?ur ?ammad",
+      "Title": "Mary: The chosen woman : the Mother of Jesus in the Quran : an interlinear commentary on Surat Maryam (Quran: interpretation in context)",
+      "Publisher": "",
+      "Year": "2001",
+      "Pages": "112[137]",
+      "Language": "English",
+      "Size": "4 Mb",
+      "Extension": "pdf",
+      "Mirror_1": "http://library.lol/main/6CD0A5A5CCFB7A1DDDD4ECFD607EEACC",
+      "Mirror_2": "http://libgen.li/ads.php?md5=6CD0A5A5CCFB7A1DDDD4ECFD607EEACC",
+      "Mirror_3": "https://library.bz/main/edit/6CD0A5A5CCFB7A1DDDD4ECFD607EEACC"
+    },
+    {
+      "ID": "426361",
+      "Author": "Mufti Muhammad Shafi",
+      "Title": "Ma'ariful Quran Volume 8",
+      "Publisher": "",
+      "Year": "",
+      "Pages": "442",
+      "Language": "Urdu",
+      "Size": "55 Mb",
+      "Extension": "pdf",
+      "Mirror_1": "http://library.lol/main/672CF1B6B2A124CA900240B166F62966",
+      "Mirror_2": "http://libgen.li/ads.php?md5=672CF1B6B2A124CA900240B166F62966",
+      "Mirror_3": "https://library.bz/main/edit/672CF1B6B2A124CA900240B166F62966"
+    },
+    {
+      "ID": "427182",
+      "Author": "Mufti Muhammad Shafi",
+      "Title": "Ma'ariful Quran Volume 6",
+      "Publisher": "",
+      "Year": "",
+      "Pages": "391",
+      "Language": "Urdu",
+      "Size": "43 Mb",
+      "Extension": "pdf",
+      "Mirror_1": "http://library.lol/main/66DFBCB82C39E99C4B5959151671E03C",
+      "Mirror_2": "http://libgen.li/ads.php?md5=66DFBCB82C39E99C4B5959151671E03C",
+      "Mirror_3": "https://library.bz/main/edit/66DFBCB82C39E99C4B5959151671E03C"
+    },
+    {
+      "ID": "430946",
+      "Author": "Mulla Sadra Shirazi",
+      "Title": "On the Hermeneutics of the Light Verse of the Quran (Tafsir Ayat al-Nur)",
+      "Publisher": "",
+      "Year": "2004",
+      "Pages": "268[83]",
+      "Language": "English",
+      "Size": "6 Mb",
+      "Extension": "pdf",
+      "Mirror_1": "http://library.lol/main/62DC666C5B8EEE6C80A018149BF55470",
+      "Mirror_2": "http://libgen.li/ads.php?md5=62DC666C5B8EEE6C80A018149BF55470",
+      "Mirror_3": "https://library.bz/main/edit/62DC666C5B8EEE6C80A018149BF55470"
+    },
+    {
+      "ID": "449543",
+      "Author": "Harun Yahya",
+      "Title": "Miracles of The QURAN",
+      "Publisher": "",
+      "Year": "2009",
+      "Pages": "97[104]",
+      "Language": "English",
+      "Size": "3 Mb",
+      "Extension": "pdf",
+      "Mirror_1": "http://library.lol/main/F45AF5AE1DC8CD3A1BC4E3C35311A0A3",
+      "Mirror_2": "http://libgen.li/ads.php?md5=F45AF5AE1DC8CD3A1BC4E3C35311A0A3",
+      "Mirror_3": "https://library.bz/main/edit/F45AF5AE1DC8CD3A1BC4E3C35311A0A3"
+    },
+    {
+      "ID": "457894",
+      "Author": "Salwa M. S. El-Awa",
+      "Title": "Textual Relations In Quran  Relevance, coherence and structure (Routledge Studies in the Qur'an)",
+      "Publisher": "",
+      "Year": "2006",
+      "Pages": "192[193]",
+      "Language": "English",
+      "Size": "1 Mb",
+      "Extension": "pdf",
+      "Mirror_1": "http://library.lol/main/EA15AB97CCCA78755EB52E7B11D59696",
+      "Mirror_2": "http://libgen.li/ads.php?md5=EA15AB97CCCA78755EB52E7B11D59696",
+      "Mirror_3": "https://library.bz/main/edit/EA15AB97CCCA78755EB52E7B11D59696"
+    },
+    {
+      "ID": "458301",
+      "Author": "\u0645\u0631\u0627\u062c\u0639\u0629 \u0645\u062c\u0645\u0648\u0639\u0629 \u0645\u0646 \u0639\u0644\u0645\u0627\u0621 \u0627\u0644\u0645\u0633\u0644\u0645\u064a\u0646",
+      "Title": "\u0627\u0644\u0642\u0631\u0622\u0646 \u0627\u0644\u0643\u0631\u064a\u0645  The Holy Quran",
+      "Publisher": "",
+      "Year": "",
+      "Pages": "152",
+      "Language": "Arabic",
+      "Size": "122 Mb",
+      "Extension": "pdf",
+      "Mirror_1": "http://library.lol/main/E9BFF97128183AA90CD606F560F63E93",
+      "Mirror_2": "http://libgen.li/ads.php?md5=E9BFF97128183AA90CD606F560F63E93",
+      "Mirror_3": "https://library.bz/main/edit/E9BFF97128183AA90CD606F560F63E93"
+    },
+    {
+      "ID": "461681",
+      "Author": "Najibullah Lafraie",
+      "Title": "Revolutionary Ideology and Islamic Militancy: The Iranian Revolution and Interpretations of the Quran",
+      "Publisher": "Tauris Academic Studies",
+      "Year": "2009",
+      "Pages": "256[289]",
+      "Language": "English",
+      "Size": "2 Mb",
+      "Extension": "pdf",
+      "Mirror_1": "http://library.lol/main/E569CFC607F3723D90A7050FDB01B09A",
+      "Mirror_2": "http://libgen.li/ads.php?md5=E569CFC607F3723D90A7050FDB01B09A",
+      "Mirror_3": "https://library.bz/main/edit/E569CFC607F3723D90A7050FDB01B09A"
+    },
+    {
+      "ID": "472107",
+      "Author": "Mufti Muhammad Shafi",
+      "Title": "Ma'ariful Quran Volume 1",
+      "Publisher": "",
+      "Year": "",
+      "Pages": "362",
+      "Language": "Urdu",
+      "Size": "104 Mb",
+      "Extension": "pdf",
+      "Mirror_1": "http://library.lol/main/D89644D8480C676509722E41D77CE6FE",
+      "Mirror_2": "http://libgen.li/ads.php?md5=D89644D8480C676509722E41D77CE6FE",
+      "Mirror_3": "https://library.bz/main/edit/D89644D8480C676509722E41D77CE6FE"
+    },
+    {
+      "ID": "473032",
+      "Author": "Sheikh  Yusuf Al-Qaradawi",
+      "Title": "Approach The Quran",
+      "Publisher": "",
+      "Year": "",
+      "Pages": "90",
+      "Language": "English",
+      "Size": "3 Mb",
+      "Extension": "pdf",
+      "Mirror_1": "http://library.lol/main/D791012041D2E2D5D5A2E1358B21B666",
+      "Mirror_2": "http://libgen.li/ads.php?md5=D791012041D2E2D5D5A2E1358B21B666",
+      "Mirror_3": "https://library.bz/main/edit/D791012041D2E2D5D5A2E1358B21B666"
+    },
+    {
+      "ID": "474011",
+      "Author": "Angelika Neuwirth,Nicolai Sinai,Michael Marx",
+      "Title": "The Quran in Context (Texts and Studies on the Qur'an)",
+      "Publisher": "",
+      "Year": "2009",
+      "Pages": "873",
+      "Language": "English",
+      "Size": "16 Mb",
+      "Extension": "pdf",
+      "Mirror_1": "http://library.lol/main/D63B35614FA4E3B58CC0181008AB4380",
+      "Mirror_2": "http://libgen.li/ads.php?md5=D63B35614FA4E3B58CC0181008AB4380",
+      "Mirror_3": "https://library.bz/main/edit/D63B35614FA4E3B58CC0181008AB4380"
+    },
+    {
+      "ID": "480269",
+      "Author": "Mufti Muhammad Shafi",
+      "Title": "Ma'ariful Quran Volume 4",
+      "Publisher": "",
+      "Year": "",
+      "Pages": "350",
+      "Language": "Urdu",
+      "Size": "96 Mb",
+      "Extension": "pdf",
+      "Mirror_1": "http://library.lol/main/CE929DC8B80B815A850D395497385295",
+      "Mirror_2": "http://libgen.li/ads.php?md5=CE929DC8B80B815A850D395497385295",
+      "Mirror_3": "https://library.bz/main/edit/CE929DC8B80B815A850D395497385295"
+    }
+  ]
+}
+02-Dec-23 09:59:19 - search_book_bot | 
+Title: THE NOBLE QURAN [with recitation]
+
+Author : Dr. Muhammad Taqi-ud-Din Al-Hilali,Dr. Muhammad Muhsin Khan
+
+Year: 
+
+Extension: pdf
+
+Direct Download Links:
+
+
+02-Dec-23 09:59:22 - next_btn | Getting next result..
+02-Dec-23 09:59:22 - next_btn | Got next result!
+02-Dec-23 09:59:22 - next_btn | 
+Title: The Quran - An Encyclopedia
+
+Author : Oliver Leaman
+
+Year: 2005
+
+Extension: pdf
+
+Direct Download Links:
+
+
+02-Dec-23 09:59:27 - back_btn | Getting previous result..
+02-Dec-23 09:59:27 - get_records | No more previous records.
+02-Dec-23 09:59:27 - back_btn | No more previous records!
+02-Dec-23 10:00:20 - search_book_bot | Querying wimpy kid...
+02-Dec-23 10:00:20 - reset | Pointer reset! | 0
+02-Dec-23 10:00:20 - reset | Records cleared! | []
+02-Dec-23 10:00:20 - reset | Download links cleared! | []
+02-Dec-23 10:00:21 - initialize_records | Records initialized
+02-Dec-23 10:00:21 - {
+  "1812947382": [
+    {
+      "ID": "491104",
+      "Author": "Jeff Kinney",
+      "Title": "Diary of a Wimpy Kid",
+      "Publisher": "Amulet Books",
+      "Year": "2007",
+      "Pages": "224",
+      "Language": "English",
+      "Size": "5 Mb",
+      "Extension": "lit",
+      "Mirror_1": "http://library.lol/main/C1C39E65E189D8DBFD98CAFB73BA77B4",
+      "Mirror_2": "http://libgen.li/ads.php?md5=C1C39E65E189D8DBFD98CAFB73BA77B4",
+      "Mirror_3": "https://library.bz/main/edit/C1C39E65E189D8DBFD98CAFB73BA77B4"
+    },
+    {
+      "ID": "494486",
+      "Author": "Jeff Kinney",
+      "Title": "Diary of a Wimpy Kid 01 Greg Heffley\u2019s Journal",
+      "Publisher": "Amulet Books",
+      "Year": "2007",
+      "Pages": "224",
+      "Language": "English",
+      "Size": "10 Mb",
+      "Extension": "epub",
+      "Mirror_1": "http://library.lol/main/BD66554D78A86BDCFEE8F17A865217C8",
+      "Mirror_2": "http://libgen.li/ads.php?md5=BD66554D78A86BDCFEE8F17A865217C8",
+      "Mirror_3": "https://library.bz/main/edit/BD66554D78A86BDCFEE8F17A865217C8"
+    },
+    {
+      "ID": "874772",
+      "Author": "Jeff Kinney",
+      "Title": "Diary of a Wimpy Kid",
+      "Publisher": "e-penguin, Amulet Books",
+      "Year": "2012",
+      "Pages": "226",
+      "Language": "English",
+      "Size": "7 Mb",
+      "Extension": "mobi",
+      "Mirror_1": "http://library.lol/main/B6739CB2E616BD29977474D11BE41E56",
+      "Mirror_2": "http://libgen.li/ads.php?md5=B6739CB2E616BD29977474D11BE41E56",
+      "Mirror_3": "https://library.bz/main/edit/B6739CB2E616BD29977474D11BE41E56"
+    },
+    {
+      "ID": "1264266",
+      "Author": "Jeff Kinney",
+      "Title": "Diary of a Wimpy Kid",
+      "Publisher": "",
+      "Year": "2007",
+      "Pages": "224[226]",
+      "Language": "English",
+      "Size": "2 Mb",
+      "Extension": "djvu",
+      "Mirror_1": "http://library.lol/main/A45708D3B87889929EA0B96EB5C91CF6",
+      "Mirror_2": "http://libgen.li/ads.php?md5=A45708D3B87889929EA0B96EB5C91CF6",
+      "Mirror_3": "https://library.bz/main/edit/A45708D3B87889929EA0B96EB5C91CF6"
+    },
+    {
+      "ID": "2300424",
+      "Author": "Jeff Kinney",
+      "Title": "Diary of a Wimpy Kid: Double Down",
+      "Publisher": "Harry N. Abrams",
+      "Year": "2016",
+      "Pages": "224[226]",
+      "Language": "English",
+      "Size": "24 Mb",
+      "Extension": "pdf",
+      "Mirror_1": "http://library.lol/main/4A4E43711510302F2C40252A7FB46410",
+      "Mirror_2": "http://libgen.li/ads.php?md5=4A4E43711510302F2C40252A7FB46410",
+      "Mirror_3": "https://library.bz/main/edit/4A4E43711510302F2C40252A7FB46410"
+    },
+    {
+      "ID": "2300425",
+      "Author": "Jeff Kinney",
+      "Title": "Diary of a Wimpy Kid",
+      "Publisher": "Amulet Books",
+      "Year": "2007",
+      "Pages": "217[226]",
+      "Language": "English",
+      "Size": "15 Mb",
+      "Extension": "pdf",
+      "Mirror_1": "http://library.lol/main/A44BD0407E33648097719D80BB78A738",
+      "Mirror_2": "http://libgen.li/ads.php?md5=A44BD0407E33648097719D80BB78A738",
+      "Mirror_3": "https://library.bz/main/edit/A44BD0407E33648097719D80BB78A738"
+    },
+    {
+      "ID": "2458835",
+      "Author": "Kinney,J.",
+      "Title": "Dog Days (Diary of a Wimpy Kid #4)",
+      "Publisher": "ABRAMS",
+      "Year": "2012",
+      "Pages": "224",
+      "Language": "English",
+      "Size": "22 Mb",
+      "Extension": "epub",
+      "Mirror_1": "http://library.lol/main/8023CF29C05B03965A4D1347C925044A",
+      "Mirror_2": "http://libgen.li/ads.php?md5=8023CF29C05B03965A4D1347C925044A",
+      "Mirror_3": "https://library.bz/main/edit/8023CF29C05B03965A4D1347C925044A"
+    },
+    {
+      "ID": "2522191",
+      "Author": "Kinney,J.",
+      "Title": "The Long Haul (Diary of a Wimpy Kid #9)",
+      "Publisher": "ABRAMS",
+      "Year": "2014",
+      "Pages": "224",
+      "Language": "English",
+      "Size": "22 Mb",
+      "Extension": "mobi",
+      "Mirror_1": "http://library.lol/main/13ED2DCB39E90B95FBEA774AA1D6F2BC",
+      "Mirror_2": "http://libgen.li/ads.php?md5=13ED2DCB39E90B95FBEA774AA1D6F2BC",
+      "Mirror_3": "https://library.bz/main/edit/13ED2DCB39E90B95FBEA774AA1D6F2BC"
+    },
+    {
+      "ID": "2522193",
+      "Author": "Kinney,J.",
+      "Title": "Hard Luck (Diary of a Wimpy Kid #8)",
+      "Publisher": "ABRAMS",
+      "Year": "2013",
+      "Pages": "224",
+      "Language": "English",
+      "Size": "13 Mb",
+      "Extension": "mobi",
+      "Mirror_1": "http://library.lol/main/B8F80A0E0E10F5E5DAB40A1BF7784073",
+      "Mirror_2": "http://libgen.li/ads.php?md5=B8F80A0E0E10F5E5DAB40A1BF7784073",
+      "Mirror_3": "https://library.bz/main/edit/B8F80A0E0E10F5E5DAB40A1BF7784073"
+    },
+    {
+      "ID": "2558422",
+      "Author": "Jeff Kiney",
+      "Title": "Diary of a Wimpy kid 3rd edition Pdf",
+      "Publisher": "Penguin Books",
+      "Year": "2007",
+      "Pages": "174",
+      "Language": "English",
+      "Size": "5 Mb",
+      "Extension": "pdf",
+      "Mirror_1": "http://library.lol/main/75A608D391FBCFD7051CF97F74246426",
+      "Mirror_2": "http://libgen.li/ads.php?md5=75A608D391FBCFD7051CF97F74246426",
+      "Mirror_3": "https://library.bz/main/edit/75A608D391FBCFD7051CF97F74246426"
+    },
+    {
+      "ID": "2558448",
+      "Author": "Jeff Kiney",
+      "Title": "Diary of a Wimpy kid wrecking ball",
+      "Publisher": "Penguin Books",
+      "Year": "",
+      "Pages": "[226]",
+      "Language": "English",
+      "Size": "38 Mb",
+      "Extension": "pdf",
+      "Mirror_1": "http://library.lol/main/82AB00DC4F9FEA3BB10475B320F03BAD",
+      "Mirror_2": "http://libgen.li/ads.php?md5=82AB00DC4F9FEA3BB10475B320F03BAD",
+      "Mirror_3": "https://library.bz/main/edit/82AB00DC4F9FEA3BB10475B320F03BAD"
+    },
+    {
+      "ID": "2731963",
+      "Author": "Willink,Jocko",
+      "Title": "Way of the warrior kid - from wimpy to warrior the navy seal way",
+      "Publisher": "Feiwel & Friends;St Martins Press",
+      "Year": "2017",
+      "Pages": "192 sidor ; 14.6 cm",
+      "Language": "English",
+      "Size": "21 Mb",
+      "Extension": "epub",
+      "Mirror_1": "http://library.lol/main/B40952493ADABFF67AEA3DDAAFD0CD7C",
+      "Mirror_2": "http://libgen.li/ads.php?md5=B40952493ADABFF67AEA3DDAAFD0CD7C",
+      "Mirror_3": "https://library.bz/main/edit/B40952493ADABFF67AEA3DDAAFD0CD7C"
+    },
+    {
+      "ID": "2753329",
+      "Author": "Kinney,J.",
+      "Title": "Old School (Diary of a Wimpy Kid #10)",
+      "Publisher": "ABRAMS",
+      "Year": "2015",
+      "Pages": "224",
+      "Language": "English",
+      "Size": "15 Mb",
+      "Extension": "epub",
+      "Mirror_1": "http://library.lol/main/15DEF6C0BB8B97EF50C73DA2CCB696E9",
+      "Mirror_2": "http://libgen.li/ads.php?md5=15DEF6C0BB8B97EF50C73DA2CCB696E9",
+      "Mirror_3": "https://library.bz/main/edit/15DEF6C0BB8B97EF50C73DA2CCB696E9"
+    },
+    {
+      "ID": "2753331",
+      "Author": "Kinney,J.",
+      "Title": "Wrecking Ball (Diary of a Wimpy Kid Book 14)",
+      "Publisher": "ABRAMS",
+      "Year": "2019",
+      "Pages": "224",
+      "Language": "English",
+      "Size": "7 Mb",
+      "Extension": "epub",
+      "Mirror_1": "http://library.lol/main/85C0C015070C257B4B4FE2EAEF773120",
+      "Mirror_2": "http://libgen.li/ads.php?md5=85C0C015070C257B4B4FE2EAEF773120",
+      "Mirror_3": "https://library.bz/main/edit/85C0C015070C257B4B4FE2EAEF773120"
+    },
+    {
+      "ID": "2753332",
+      "Author": "Jeff Kinney",
+      "Title": "The Wimpy Kid Movie Diary (Dog Days revised and expanded edition) (Diary of a Wimpy Kid)",
+      "Publisher": "Amulet Books",
+      "Year": "2017",
+      "Pages": "208",
+      "Language": "English",
+      "Size": "10 Mb",
+      "Extension": "epub",
+      "Mirror_1": "http://library.lol/main/7F1D5352FEAC51C48FB909AD9A4110B0",
+      "Mirror_2": "http://libgen.li/ads.php?md5=7F1D5352FEAC51C48FB909AD9A4110B0",
+      "Mirror_3": "https://library.bz/main/edit/7F1D5352FEAC51C48FB909AD9A4110B0"
+    },
+    {
+      "ID": "2753333",
+      "Author": "Kinney,J.",
+      "Title": "The Wimpy Kid Movie Diary: The Next Chapter",
+      "Publisher": "ABRAMS",
+      "Year": "2017",
+      "Pages": "208",
+      "Language": "English",
+      "Size": "9 Mb",
+      "Extension": "epub",
+      "Mirror_1": "http://library.lol/main/2F0A9EA211659AF69B9EF5C54ACB07F7",
+      "Mirror_2": "http://libgen.li/ads.php?md5=2F0A9EA211659AF69B9EF5C54ACB07F7",
+      "Mirror_3": "https://library.bz/main/edit/2F0A9EA211659AF69B9EF5C54ACB07F7"
+    },
+    {
+      "ID": "2753334",
+      "Author": "Kinney,J.",
+      "Title": "The Meltdown (Diary of a Wimpy Kid Book 13)",
+      "Publisher": "ABRAMS",
+      "Year": "2018",
+      "Pages": "224",
+      "Language": "English",
+      "Size": "8 Mb",
+      "Extension": "epub",
+      "Mirror_1": "http://library.lol/main/B9C7D2F894DDAF41F22EC5BC63EA75AD",
+      "Mirror_2": "http://libgen.li/ads.php?md5=B9C7D2F894DDAF41F22EC5BC63EA75AD",
+      "Mirror_3": "https://library.bz/main/edit/B9C7D2F894DDAF41F22EC5BC63EA75AD"
+    },
+    {
+      "ID": "2753335",
+      "Author": "Kinney,J.",
+      "Title": "Double Down (Diary of a Wimpy Kid #11)",
+      "Publisher": "ABRAMS",
+      "Year": "2016",
+      "Pages": "224",
+      "Language": "English",
+      "Size": "8 Mb",
+      "Extension": "azw3",
+      "Mirror_1": "http://library.lol/main/F1D700F9013EA294A2E601F753E55F4B",
+      "Mirror_2": "http://libgen.li/ads.php?md5=F1D700F9013EA294A2E601F753E55F4B",
+      "Mirror_3": "https://library.bz/main/edit/F1D700F9013EA294A2E601F753E55F4B"
+    },
+    {
+      "ID": "2783949",
+      "Author": "Kinney,J.",
+      "Title": "The Meltdown (Diary of a Wimpy Kid Book 13)",
+      "Publisher": "ABRAMS",
+      "Year": "2018",
+      "Pages": "224",
+      "Language": "English",
+      "Size": "45 Mb",
+      "Extension": "azw3",
+      "Mirror_1": "http://library.lol/main/BAFBBF7C6985AA00D9C3111E32DB6486",
+      "Mirror_2": "http://libgen.li/ads.php?md5=BAFBBF7C6985AA00D9C3111E32DB6486",
+      "Mirror_3": "https://library.bz/main/edit/BAFBBF7C6985AA00D9C3111E32DB6486"
+    },
+    {
+      "ID": "2798250",
+      "Author": "Jeff Kinney",
+      "Title": "Diary Of A Wimpy Kid - The Deep End (Book 15)",
+      "Publisher": "Harry N. Abrams",
+      "Year": "2020",
+      "Pages": "228",
+      "Language": "English",
+      "Size": "62 Mb",
+      "Extension": "pdf",
+      "Mirror_1": "http://library.lol/main/03A0F80148A25CB65D47DD4175EB6771",
+      "Mirror_2": "http://libgen.li/ads.php?md5=03A0F80148A25CB65D47DD4175EB6771",
+      "Mirror_3": "https://library.bz/main/edit/03A0F80148A25CB65D47DD4175EB6771"
+    },
+    {
+      "ID": "2950884",
+      "Author": "Kinney,J.",
+      "Title": "Diary of a Wimpy Kid: Wrecking Ball (Book 14)",
+      "Publisher": "Penguin Random House Children\u2019s UK",
+      "Year": "2019",
+      "Pages": "224",
+      "Language": "English",
+      "Size": "32 Mb",
+      "Extension": "azw3",
+      "Mirror_1": "http://library.lol/main/7D57F2BD71FE86D62040462FF9FFBE34",
+      "Mirror_2": "http://libgen.li/ads.php?md5=7D57F2BD71FE86D62040462FF9FFBE34",
+      "Mirror_3": "https://library.bz/main/edit/7D57F2BD71FE86D62040462FF9FFBE34"
+    },
+    {
+      "ID": "2950890",
+      "Author": "Kinney,J.",
+      "Title": "Diary of a Wimpy Kid: The Deep End (Book 15)",
+      "Publisher": "Penguin Random House Children\u2019s UK",
+      "Year": "2020",
+      "Pages": "224",
+      "Language": "English",
+      "Size": "47 Mb",
+      "Extension": "azw3",
+      "Mirror_1": "http://library.lol/main/C136148FDA5E40DA652A2E986BA65EC6",
+      "Mirror_2": "http://libgen.li/ads.php?md5=C136148FDA5E40DA652A2E986BA65EC6",
+      "Mirror_3": "https://library.bz/main/edit/C136148FDA5E40DA652A2E986BA65EC6"
+    },
+    {
+      "ID": "3001828",
+      "Author": "Kinney,J.",
+      "Title": "Old School (Diary of a Wimpy Kid #10)",
+      "Publisher": "Harry N. Abrams",
+      "Year": "2015",
+      "Pages": "224",
+      "Language": "English",
+      "Size": "8 Mb",
+      "Extension": "azw3",
+      "Mirror_1": "http://library.lol/main/30D5424C4A2B3CC5961535FB342A670E",
+      "Mirror_2": "http://libgen.li/ads.php?md5=30D5424C4A2B3CC5961535FB342A670E",
+      "Mirror_3": "https://library.bz/main/edit/30D5424C4A2B3CC5961535FB342A670E"
+    },
+    {
+      "ID": "3127023",
+      "Author": "Jeff Kinney",
+      "Title": "Big Shot Diary of a Wimpy Kid Book 16",
+      "Publisher": "Harry N. Abrams",
+      "Year": "2021",
+      "Pages": "224[226]",
+      "Language": "English",
+      "Size": "49 Mb",
+      "Extension": "pdf",
+      "Mirror_1": "http://library.lol/main/817D9B13DA79FBC0203838407019D1E7",
+      "Mirror_2": "http://libgen.li/ads.php?md5=817D9B13DA79FBC0203838407019D1E7",
+      "Mirror_3": "https://library.bz/main/edit/817D9B13DA79FBC0203838407019D1E7"
+    },
+    {
+      "ID": "3408052",
+      "Author": "G. Whiz",
+      "Title": "Diary of a Wimpy Kid- True or False?",
+      "Publisher": "GWhizBooks.com",
+      "Year": "2014",
+      "Pages": "",
+      "Language": "English",
+      "Size": "332 Kb",
+      "Extension": "epub",
+      "Mirror_1": "http://library.lol/main/882A13AD6834D4FE6DF99AE624DA0E02",
+      "Mirror_2": "http://libgen.li/ads.php?md5=882A13AD6834D4FE6DF99AE624DA0E02",
+      "Mirror_3": "https://library.bz/main/edit/882A13AD6834D4FE6DF99AE624DA0E02"
+    }
+  ]
+}
+02-Dec-23 10:00:22 - search_book_bot | 
+Title: Diary of a Wimpy Kid
+
+Author : Jeff Kinney
+
+Year: 2007
+
+Extension: lit
+
+Direct Download Links:
+
+
+02-Dec-23 10:00:24 - next_btn | Getting next result..
+02-Dec-23 10:00:24 - next_btn | Got next result!
+02-Dec-23 10:00:24 - next_btn | 
+Title: Diary of a Wimpy Kid 01 Greg Heffley’s Journal
+
+Author : Jeff Kinney
+
+Year: 2007
+
+Extension: epub
+
+Direct Download Links:
+
+
+02-Dec-23 10:00:30 - start_book_bot | impact751 | 484506892 has started the bot!
+02-Dec-23 10:00:31 - start_book_bot | Menu Commands have been initialized.
+02-Dec-23 10:00:36 - search_book_bot | Querying holy bible...
+02-Dec-23 10:00:36 - reset | Pointer reset! | 0
+02-Dec-23 10:00:36 - reset | Records cleared! | []
+02-Dec-23 10:00:36 - reset | Download links cleared! | []
+02-Dec-23 10:00:37 - initialize_records | Records initialized
+02-Dec-23 10:00:37 - {
+  "1812947382": [
+    {
+      "ID": "491104",
+      "Author": "Jeff Kinney",
+      "Title": "Diary of a Wimpy Kid",
+      "Publisher": "Amulet Books",
+      "Year": "2007",
+      "Pages": "224",
+      "Language": "English",
+      "Size": "5 Mb",
+      "Extension": "lit",
+      "Mirror_1": "http://library.lol/main/C1C39E65E189D8DBFD98CAFB73BA77B4",
+      "Mirror_2": "http://libgen.li/ads.php?md5=C1C39E65E189D8DBFD98CAFB73BA77B4",
+      "Mirror_3": "https://library.bz/main/edit/C1C39E65E189D8DBFD98CAFB73BA77B4"
+    },
+    {
+      "ID": "494486",
+      "Author": "Jeff Kinney",
+      "Title": "Diary of a Wimpy Kid 01 Greg Heffley\u2019s Journal",
+      "Publisher": "Amulet Books",
+      "Year": "2007",
+      "Pages": "224",
+      "Language": "English",
+      "Size": "10 Mb",
+      "Extension": "epub",
+      "Mirror_1": "http://library.lol/main/BD66554D78A86BDCFEE8F17A865217C8",
+      "Mirror_2": "http://libgen.li/ads.php?md5=BD66554D78A86BDCFEE8F17A865217C8",
+      "Mirror_3": "https://library.bz/main/edit/BD66554D78A86BDCFEE8F17A865217C8"
+    },
+    {
+      "ID": "874772",
+      "Author": "Jeff Kinney",
+      "Title": "Diary of a Wimpy Kid",
+      "Publisher": "e-penguin, Amulet Books",
+      "Year": "2012",
+      "Pages": "226",
+      "Language": "English",
+      "Size": "7 Mb",
+      "Extension": "mobi",
+      "Mirror_1": "http://library.lol/main/B6739CB2E616BD29977474D11BE41E56",
+      "Mirror_2": "http://libgen.li/ads.php?md5=B6739CB2E616BD29977474D11BE41E56",
+      "Mirror_3": "https://library.bz/main/edit/B6739CB2E616BD29977474D11BE41E56"
+    },
+    {
+      "ID": "1264266",
+      "Author": "Jeff Kinney",
+      "Title": "Diary of a Wimpy Kid",
+      "Publisher": "",
+      "Year": "2007",
+      "Pages": "224[226]",
+      "Language": "English",
+      "Size": "2 Mb",
+      "Extension": "djvu",
+      "Mirror_1": "http://library.lol/main/A45708D3B87889929EA0B96EB5C91CF6",
+      "Mirror_2": "http://libgen.li/ads.php?md5=A45708D3B87889929EA0B96EB5C91CF6",
+      "Mirror_3": "https://library.bz/main/edit/A45708D3B87889929EA0B96EB5C91CF6"
+    },
+    {
+      "ID": "2300424",
+      "Author": "Jeff Kinney",
+      "Title": "Diary of a Wimpy Kid: Double Down",
+      "Publisher": "Harry N. Abrams",
+      "Year": "2016",
+      "Pages": "224[226]",
+      "Language": "English",
+      "Size": "24 Mb",
+      "Extension": "pdf",
+      "Mirror_1": "http://library.lol/main/4A4E43711510302F2C40252A7FB46410",
+      "Mirror_2": "http://libgen.li/ads.php?md5=4A4E43711510302F2C40252A7FB46410",
+      "Mirror_3": "https://library.bz/main/edit/4A4E43711510302F2C40252A7FB46410"
+    },
+    {
+      "ID": "2300425",
+      "Author": "Jeff Kinney",
+      "Title": "Diary of a Wimpy Kid",
+      "Publisher": "Amulet Books",
+      "Year": "2007",
+      "Pages": "217[226]",
+      "Language": "English",
+      "Size": "15 Mb",
+      "Extension": "pdf",
+      "Mirror_1": "http://library.lol/main/A44BD0407E33648097719D80BB78A738",
+      "Mirror_2": "http://libgen.li/ads.php?md5=A44BD0407E33648097719D80BB78A738",
+      "Mirror_3": "https://library.bz/main/edit/A44BD0407E33648097719D80BB78A738"
+    },
+    {
+      "ID": "2458835",
+      "Author": "Kinney,J.",
+      "Title": "Dog Days (Diary of a Wimpy Kid #4)",
+      "Publisher": "ABRAMS",
+      "Year": "2012",
+      "Pages": "224",
+      "Language": "English",
+      "Size": "22 Mb",
+      "Extension": "epub",
+      "Mirror_1": "http://library.lol/main/8023CF29C05B03965A4D1347C925044A",
+      "Mirror_2": "http://libgen.li/ads.php?md5=8023CF29C05B03965A4D1347C925044A",
+      "Mirror_3": "https://library.bz/main/edit/8023CF29C05B03965A4D1347C925044A"
+    },
+    {
+      "ID": "2522191",
+      "Author": "Kinney,J.",
+      "Title": "The Long Haul (Diary of a Wimpy Kid #9)",
+      "Publisher": "ABRAMS",
+      "Year": "2014",
+      "Pages": "224",
+      "Language": "English",
+      "Size": "22 Mb",
+      "Extension": "mobi",
+      "Mirror_1": "http://library.lol/main/13ED2DCB39E90B95FBEA774AA1D6F2BC",
+      "Mirror_2": "http://libgen.li/ads.php?md5=13ED2DCB39E90B95FBEA774AA1D6F2BC",
+      "Mirror_3": "https://library.bz/main/edit/13ED2DCB39E90B95FBEA774AA1D6F2BC"
+    },
+    {
+      "ID": "2522193",
+      "Author": "Kinney,J.",
+      "Title": "Hard Luck (Diary of a Wimpy Kid #8)",
+      "Publisher": "ABRAMS",
+      "Year": "2013",
+      "Pages": "224",
+      "Language": "English",
+      "Size": "13 Mb",
+      "Extension": "mobi",
+      "Mirror_1": "http://library.lol/main/B8F80A0E0E10F5E5DAB40A1BF7784073",
+      "Mirror_2": "http://libgen.li/ads.php?md5=B8F80A0E0E10F5E5DAB40A1BF7784073",
+      "Mirror_3": "https://library.bz/main/edit/B8F80A0E0E10F5E5DAB40A1BF7784073"
+    },
+    {
+      "ID": "2558422",
+      "Author": "Jeff Kiney",
+      "Title": "Diary of a Wimpy kid 3rd edition Pdf",
+      "Publisher": "Penguin Books",
+      "Year": "2007",
+      "Pages": "174",
+      "Language": "English",
+      "Size": "5 Mb",
+      "Extension": "pdf",
+      "Mirror_1": "http://library.lol/main/75A608D391FBCFD7051CF97F74246426",
+      "Mirror_2": "http://libgen.li/ads.php?md5=75A608D391FBCFD7051CF97F74246426",
+      "Mirror_3": "https://library.bz/main/edit/75A608D391FBCFD7051CF97F74246426"
+    },
+    {
+      "ID": "2558448",
+      "Author": "Jeff Kiney",
+      "Title": "Diary of a Wimpy kid wrecking ball",
+      "Publisher": "Penguin Books",
+      "Year": "",
+      "Pages": "[226]",
+      "Language": "English",
+      "Size": "38 Mb",
+      "Extension": "pdf",
+      "Mirror_1": "http://library.lol/main/82AB00DC4F9FEA3BB10475B320F03BAD",
+      "Mirror_2": "http://libgen.li/ads.php?md5=82AB00DC4F9FEA3BB10475B320F03BAD",
+      "Mirror_3": "https://library.bz/main/edit/82AB00DC4F9FEA3BB10475B320F03BAD"
+    },
+    {
+      "ID": "2731963",
+      "Author": "Willink,Jocko",
+      "Title": "Way of the warrior kid - from wimpy to warrior the navy seal way",
+      "Publisher": "Feiwel & Friends;St Martins Press",
+      "Year": "2017",
+      "Pages": "192 sidor ; 14.6 cm",
+      "Language": "English",
+      "Size": "21 Mb",
+      "Extension": "epub",
+      "Mirror_1": "http://library.lol/main/B40952493ADABFF67AEA3DDAAFD0CD7C",
+      "Mirror_2": "http://libgen.li/ads.php?md5=B40952493ADABFF67AEA3DDAAFD0CD7C",
+      "Mirror_3": "https://library.bz/main/edit/B40952493ADABFF67AEA3DDAAFD0CD7C"
+    },
+    {
+      "ID": "2753329",
+      "Author": "Kinney,J.",
+      "Title": "Old School (Diary of a Wimpy Kid #10)",
+      "Publisher": "ABRAMS",
+      "Year": "2015",
+      "Pages": "224",
+      "Language": "English",
+      "Size": "15 Mb",
+      "Extension": "epub",
+      "Mirror_1": "http://library.lol/main/15DEF6C0BB8B97EF50C73DA2CCB696E9",
+      "Mirror_2": "http://libgen.li/ads.php?md5=15DEF6C0BB8B97EF50C73DA2CCB696E9",
+      "Mirror_3": "https://library.bz/main/edit/15DEF6C0BB8B97EF50C73DA2CCB696E9"
+    },
+    {
+      "ID": "2753331",
+      "Author": "Kinney,J.",
+      "Title": "Wrecking Ball (Diary of a Wimpy Kid Book 14)",
+      "Publisher": "ABRAMS",
+      "Year": "2019",
+      "Pages": "224",
+      "Language": "English",
+      "Size": "7 Mb",
+      "Extension": "epub",
+      "Mirror_1": "http://library.lol/main/85C0C015070C257B4B4FE2EAEF773120",
+      "Mirror_2": "http://libgen.li/ads.php?md5=85C0C015070C257B4B4FE2EAEF773120",
+      "Mirror_3": "https://library.bz/main/edit/85C0C015070C257B4B4FE2EAEF773120"
+    },
+    {
+      "ID": "2753332",
+      "Author": "Jeff Kinney",
+      "Title": "The Wimpy Kid Movie Diary (Dog Days revised and expanded edition) (Diary of a Wimpy Kid)",
+      "Publisher": "Amulet Books",
+      "Year": "2017",
+      "Pages": "208",
+      "Language": "English",
+      "Size": "10 Mb",
+      "Extension": "epub",
+      "Mirror_1": "http://library.lol/main/7F1D5352FEAC51C48FB909AD9A4110B0",
+      "Mirror_2": "http://libgen.li/ads.php?md5=7F1D5352FEAC51C48FB909AD9A4110B0",
+      "Mirror_3": "https://library.bz/main/edit/7F1D5352FEAC51C48FB909AD9A4110B0"
+    },
+    {
+      "ID": "2753333",
+      "Author": "Kinney,J.",
+      "Title": "The Wimpy Kid Movie Diary: The Next Chapter",
+      "Publisher": "ABRAMS",
+      "Year": "2017",
+      "Pages": "208",
+      "Language": "English",
+      "Size": "9 Mb",
+      "Extension": "epub",
+      "Mirror_1": "http://library.lol/main/2F0A9EA211659AF69B9EF5C54ACB07F7",
+      "Mirror_2": "http://libgen.li/ads.php?md5=2F0A9EA211659AF69B9EF5C54ACB07F7",
+      "Mirror_3": "https://library.bz/main/edit/2F0A9EA211659AF69B9EF5C54ACB07F7"
+    },
+    {
+      "ID": "2753334",
+      "Author": "Kinney,J.",
+      "Title": "The Meltdown (Diary of a Wimpy Kid Book 13)",
+      "Publisher": "ABRAMS",
+      "Year": "2018",
+      "Pages": "224",
+      "Language": "English",
+      "Size": "8 Mb",
+      "Extension": "epub",
+      "Mirror_1": "http://library.lol/main/B9C7D2F894DDAF41F22EC5BC63EA75AD",
+      "Mirror_2": "http://libgen.li/ads.php?md5=B9C7D2F894DDAF41F22EC5BC63EA75AD",
+      "Mirror_3": "https://library.bz/main/edit/B9C7D2F894DDAF41F22EC5BC63EA75AD"
+    },
+    {
+      "ID": "2753335",
+      "Author": "Kinney,J.",
+      "Title": "Double Down (Diary of a Wimpy Kid #11)",
+      "Publisher": "ABRAMS",
+      "Year": "2016",
+      "Pages": "224",
+      "Language": "English",
+      "Size": "8 Mb",
+      "Extension": "azw3",
+      "Mirror_1": "http://library.lol/main/F1D700F9013EA294A2E601F753E55F4B",
+      "Mirror_2": "http://libgen.li/ads.php?md5=F1D700F9013EA294A2E601F753E55F4B",
+      "Mirror_3": "https://library.bz/main/edit/F1D700F9013EA294A2E601F753E55F4B"
+    },
+    {
+      "ID": "2783949",
+      "Author": "Kinney,J.",
+      "Title": "The Meltdown (Diary of a Wimpy Kid Book 13)",
+      "Publisher": "ABRAMS",
+      "Year": "2018",
+      "Pages": "224",
+      "Language": "English",
+      "Size": "45 Mb",
+      "Extension": "azw3",
+      "Mirror_1": "http://library.lol/main/BAFBBF7C6985AA00D9C3111E32DB6486",
+      "Mirror_2": "http://libgen.li/ads.php?md5=BAFBBF7C6985AA00D9C3111E32DB6486",
+      "Mirror_3": "https://library.bz/main/edit/BAFBBF7C6985AA00D9C3111E32DB6486"
+    },
+    {
+      "ID": "2798250",
+      "Author": "Jeff Kinney",
+      "Title": "Diary Of A Wimpy Kid - The Deep End (Book 15)",
+      "Publisher": "Harry N. Abrams",
+      "Year": "2020",
+      "Pages": "228",
+      "Language": "English",
+      "Size": "62 Mb",
+      "Extension": "pdf",
+      "Mirror_1": "http://library.lol/main/03A0F80148A25CB65D47DD4175EB6771",
+      "Mirror_2": "http://libgen.li/ads.php?md5=03A0F80148A25CB65D47DD4175EB6771",
+      "Mirror_3": "https://library.bz/main/edit/03A0F80148A25CB65D47DD4175EB6771"
+    },
+    {
+      "ID": "2950884",
+      "Author": "Kinney,J.",
+      "Title": "Diary of a Wimpy Kid: Wrecking Ball (Book 14)",
+      "Publisher": "Penguin Random House Children\u2019s UK",
+      "Year": "2019",
+      "Pages": "224",
+      "Language": "English",
+      "Size": "32 Mb",
+      "Extension": "azw3",
+      "Mirror_1": "http://library.lol/main/7D57F2BD71FE86D62040462FF9FFBE34",
+      "Mirror_2": "http://libgen.li/ads.php?md5=7D57F2BD71FE86D62040462FF9FFBE34",
+      "Mirror_3": "https://library.bz/main/edit/7D57F2BD71FE86D62040462FF9FFBE34"
+    },
+    {
+      "ID": "2950890",
+      "Author": "Kinney,J.",
+      "Title": "Diary of a Wimpy Kid: The Deep End (Book 15)",
+      "Publisher": "Penguin Random House Children\u2019s UK",
+      "Year": "2020",
+      "Pages": "224",
+      "Language": "English",
+      "Size": "47 Mb",
+      "Extension": "azw3",
+      "Mirror_1": "http://library.lol/main/C136148FDA5E40DA652A2E986BA65EC6",
+      "Mirror_2": "http://libgen.li/ads.php?md5=C136148FDA5E40DA652A2E986BA65EC6",
+      "Mirror_3": "https://library.bz/main/edit/C136148FDA5E40DA652A2E986BA65EC6"
+    },
+    {
+      "ID": "3001828",
+      "Author": "Kinney,J.",
+      "Title": "Old School (Diary of a Wimpy Kid #10)",
+      "Publisher": "Harry N. Abrams",
+      "Year": "2015",
+      "Pages": "224",
+      "Language": "English",
+      "Size": "8 Mb",
+      "Extension": "azw3",
+      "Mirror_1": "http://library.lol/main/30D5424C4A2B3CC5961535FB342A670E",
+      "Mirror_2": "http://libgen.li/ads.php?md5=30D5424C4A2B3CC5961535FB342A670E",
+      "Mirror_3": "https://library.bz/main/edit/30D5424C4A2B3CC5961535FB342A670E"
+    },
+    {
+      "ID": "3127023",
+      "Author": "Jeff Kinney",
+      "Title": "Big Shot Diary of a Wimpy Kid Book 16",
+      "Publisher": "Harry N. Abrams",
+      "Year": "2021",
+      "Pages": "224[226]",
+      "Language": "English",
+      "Size": "49 Mb",
+      "Extension": "pdf",
+      "Mirror_1": "http://library.lol/main/817D9B13DA79FBC0203838407019D1E7",
+      "Mirror_2": "http://libgen.li/ads.php?md5=817D9B13DA79FBC0203838407019D1E7",
+      "Mirror_3": "https://library.bz/main/edit/817D9B13DA79FBC0203838407019D1E7"
+    },
+    {
+      "ID": "3408052",
+      "Author": "G. Whiz",
+      "Title": "Diary of a Wimpy Kid- True or False?",
+      "Publisher": "GWhizBooks.com",
+      "Year": "2014",
+      "Pages": "",
+      "Language": "English",
+      "Size": "332 Kb",
+      "Extension": "epub",
+      "Mirror_1": "http://library.lol/main/882A13AD6834D4FE6DF99AE624DA0E02",
+      "Mirror_2": "http://libgen.li/ads.php?md5=882A13AD6834D4FE6DF99AE624DA0E02",
+      "Mirror_3": "https://library.bz/main/edit/882A13AD6834D4FE6DF99AE624DA0E02"
+    }
+  ],
+  "484506892": [
+    {
+      "ID": "224774",
+      "Author": "",
+      "Title": "The Trinity in the Name of God, Elohim - Jesus Holy Spirit Jewish Messiah Bible",
+      "Publisher": "",
+      "Year": "",
+      "Pages": "",
+      "Language": "English",
+      "Size": "35 Kb",
+      "Extension": "doc",
+      "Mirror_1": "http://library.lol/main/248F0966F0AC295785060C2B9DBE89C6",
+      "Mirror_2": "http://libgen.li/ads.php?md5=248F0966F0AC295785060C2B9DBE89C6",
+      "Mirror_3": "https://library.bz/main/edit/248F0966F0AC295785060C2B9DBE89C6"
+    },
+    {
+      "ID": "247884",
+      "Author": "",
+      "Title": "Holy Bible - Old & New Testaments (King James)",
+      "Publisher": "",
+      "Year": "",
+      "Pages": "3087",
+      "Language": "English",
+      "Size": "5 Mb",
+      "Extension": "pdf",
+      "Mirror_1": "http://library.lol/main/3100E2385896E047A939BB3CEF959C50",
+      "Mirror_2": "http://libgen.li/ads.php?md5=3100E2385896E047A939BB3CEF959C50",
+      "Mirror_3": "https://library.bz/main/edit/3100E2385896E047A939BB3CEF959C50"
+    },
+    {
+      "ID": "271291",
+      "Author": "",
+      "Title": "The Holy Bible: New International Version",
+      "Publisher": "HarperTorch",
+      "Year": "1993",
+      "Pages": "371",
+      "Language": "English",
+      "Size": "1 Mb",
+      "Extension": "pdf",
+      "Mirror_1": "http://library.lol/main/1925973B432956231EC338AD0EE1B69A",
+      "Mirror_2": "http://libgen.li/ads.php?md5=1925973B432956231EC338AD0EE1B69A",
+      "Mirror_3": "https://library.bz/main/edit/1925973B432956231EC338AD0EE1B69A"
+    },
+    {
+      "ID": "313327",
+      "Author": "Martyn Lloyd-Jones",
+      "Title": "Great Doctrines of the Bible: God the Father, God the Son; God the Holy Spirit; The Church and the Last Things",
+      "Publisher": "Crossway Books",
+      "Year": "2003",
+      "Pages": "510",
+      "Language": "English",
+      "Size": "7 Mb",
+      "Extension": "pdf",
+      "Mirror_1": "http://library.lol/main/5D5D4571A8C9DB973D65694F711F3968",
+      "Mirror_2": "http://libgen.li/ads.php?md5=5D5D4571A8C9DB973D65694F711F3968",
+      "Mirror_3": "https://library.bz/main/edit/5D5D4571A8C9DB973D65694F711F3968"
+    },
+    {
+      "ID": "389626",
+      "Author": "Claudia V. Camp",
+      "Title": "Wise, Strange and Holy: The Strange Woman and the Making of the Bible",
+      "Publisher": "Sheffield Academic Press",
+      "Year": "2009",
+      "Pages": "372[373]",
+      "Language": "English",
+      "Size": "6 Mb",
+      "Extension": "pdf",
+      "Mirror_1": "http://library.lol/main/8CD1ACE4D461601D067732AF2A995B35",
+      "Mirror_2": "http://libgen.li/ads.php?md5=8CD1ACE4D461601D067732AF2A995B35",
+      "Mirror_3": "https://library.bz/main/edit/8CD1ACE4D461601D067732AF2A995B35"
+    },
+    {
+      "ID": "439457",
+      "Author": "Thomas Nelson (Translator)",
+      "Title": "New King James Version Holy Bible (Burgundy)",
+      "Publisher": "",
+      "Year": "2006",
+      "Pages": "1536[742]",
+      "Language": "English",
+      "Size": "3 Mb",
+      "Extension": "pdf",
+      "Mirror_1": "http://library.lol/main/5710C09B4199682CA4C84B89020A0516",
+      "Mirror_2": "http://libgen.li/ads.php?md5=5710C09B4199682CA4C84B89020A0516",
+      "Mirror_3": "https://library.bz/main/edit/5710C09B4199682CA4C84B89020A0516"
+    },
+    {
+      "ID": "473808",
+      "Author": "translators: Dr. Lancelot Andrews et al.",
+      "Title": "The Holy Bible -  a reprint of the original 1611 Edition (1833  - 1911)",
+      "Publisher": "",
+      "Year": "",
+      "Pages": "731",
+      "Language": "English",
+      "Size": "148 Mb",
+      "Extension": "pdf",
+      "Mirror_1": "http://library.lol/main/D69A50B02D4B887626084B59C94A47BC",
+      "Mirror_2": "http://libgen.li/ads.php?md5=D69A50B02D4B887626084B59C94A47BC",
+      "Mirror_3": "https://library.bz/main/edit/D69A50B02D4B887626084B59C94A47BC"
+    },
+    {
+      "ID": "535060",
+      "Author": "Richard Challoner (Translator)",
+      "Title": "Holy Bible - Douay-Rheims",
+      "Publisher": "",
+      "Year": "2005",
+      "Pages": "1512[799]",
+      "Language": "English",
+      "Size": "2 Mb",
+      "Extension": "pdf",
+      "Mirror_1": "http://library.lol/main/8C48CCF943896E4958B93B04F9F42A30",
+      "Mirror_2": "http://libgen.li/ads.php?md5=8C48CCF943896E4958B93B04F9F42A30",
+      "Mirror_3": "https://library.bz/main/edit/8C48CCF943896E4958B93B04F9F42A30"
+    },
+    {
+      "ID": "559350",
+      "Author": "Crossway Bibles",
+      "Title": "The Holy Bible English Standard Version (ESV)",
+      "Publisher": "Good News Publishers",
+      "Year": "2007",
+      "Pages": "",
+      "Language": "English",
+      "Size": "2 Mb",
+      "Extension": "epub",
+      "Mirror_1": "http://library.lol/main/2737050CAD7969348130BC2BA1AC575D",
+      "Mirror_2": "http://libgen.li/ads.php?md5=2737050CAD7969348130BC2BA1AC575D",
+      "Mirror_3": "https://library.bz/main/edit/2737050CAD7969348130BC2BA1AC575D"
+    },
+    {
+      "ID": "561165",
+      "Author": "Thomas Nelson (Translator)",
+      "Title": "New King James Version Holy Bible (Burgundy)",
+      "Publisher": "",
+      "Year": "2006",
+      "Pages": "1414",
+      "Language": "English",
+      "Size": "10 Mb",
+      "Extension": "pdf",
+      "Mirror_1": "http://library.lol/main/255095C0993B2AB00A5EDDA3DA375312",
+      "Mirror_2": "http://libgen.li/ads.php?md5=255095C0993B2AB00A5EDDA3DA375312",
+      "Mirror_3": "https://library.bz/main/edit/255095C0993B2AB00A5EDDA3DA375312"
+    },
+    {
+      "ID": "561750",
+      "Author": "Charles H. Spurgeon",
+      "Title": "Morning and Evening: A New Edition of the Classic Devotional Based on The Holy Bible, English Standard Version",
+      "Publisher": "",
+      "Year": "2003",
+      "Pages": "400[401]",
+      "Language": "English",
+      "Size": "2 Mb",
+      "Extension": "pdf",
+      "Mirror_1": "http://library.lol/main/24363AD271C5343DBCA22858ED3982F1",
+      "Mirror_2": "http://libgen.li/ads.php?md5=24363AD271C5343DBCA22858ED3982F1",
+      "Mirror_3": "https://library.bz/main/edit/24363AD271C5343DBCA22858ED3982F1"
+    },
+    {
+      "ID": "588753",
+      "Author": "translators: Dr. Lancelot Andrews et al.",
+      "Title": "Holy Bible - Pure Cambridge Edition",
+      "Publisher": "",
+      "Year": "",
+      "Pages": "1292",
+      "Language": "English",
+      "Size": "12 Mb",
+      "Extension": "pdf",
+      "Mirror_1": "http://library.lol/main/41681F768616F3D04ACBAE0EFAB6C8B1",
+      "Mirror_2": "http://libgen.li/ads.php?md5=41681F768616F3D04ACBAE0EFAB6C8B1",
+      "Mirror_3": "https://library.bz/main/edit/41681F768616F3D04ACBAE0EFAB6C8B1"
+    },
+    {
+      "ID": "614579",
+      "Author": "\u12e8\u12a2\u1275\u12ee\u1335\u12eb \u1218\u133d\u1210\u134d \u1245\u12f1\u1235 \u121b\u1285\u1260\u122d - The Bible Society of Ethiopia",
+      "Title": "\u12e8\u1218\u133d\u1210\u134d \u1245\u12f1\u1235 \u1218\u12dd\u1308\u1260 \u1243\u120b\u1275 - A Dictionary of the Holy Bible",
+      "Publisher": "Bible Society of Ethiopia",
+      "Year": "2000",
+      "Pages": "287",
+      "Language": "Amharic",
+      "Size": "12 Mb",
+      "Extension": "pdf",
+      "Mirror_1": "http://library.lol/main/7F7C2C3143935258E163129A1C565F5E",
+      "Mirror_2": "http://libgen.li/ads.php?md5=7F7C2C3143935258E163129A1C565F5E",
+      "Mirror_3": "https://library.bz/main/edit/7F7C2C3143935258E163129A1C565F5E"
+    },
+    {
+      "ID": "626920",
+      "Author": "Alan Dundes",
+      "Title": "Holy Writ as Oral Lit: The Bible as Folklore",
+      "Publisher": "Rowman & Littlefield Publishers",
+      "Year": "1999",
+      "Pages": "",
+      "Language": "English",
+      "Size": "269 Kb",
+      "Extension": "epub",
+      "Mirror_1": "http://library.lol/main/AAD3C2D1ACD0C0A429C509731F5644CD",
+      "Mirror_2": "http://libgen.li/ads.php?md5=AAD3C2D1ACD0C0A429C509731F5644CD",
+      "Mirror_3": "https://library.bz/main/edit/AAD3C2D1ACD0C0A429C509731F5644CD"
+    },
+    {
+      "ID": "668900",
+      "Author": "AGES Digital Library",
+      "Title": "The Holy Bible - New Testament - King James Version",
+      "Publisher": "AGES Digital Library",
+      "Year": "1996",
+      "Pages": "615",
+      "Language": "English",
+      "Size": "1 Mb",
+      "Extension": "pdf",
+      "Mirror_1": "http://library.lol/main/6A48AC8A31284D690C4DC7D067E92C43",
+      "Mirror_2": "http://libgen.li/ads.php?md5=6A48AC8A31284D690C4DC7D067E92C43",
+      "Mirror_3": "https://library.bz/main/edit/6A48AC8A31284D690C4DC7D067E92C43"
+    },
+    {
+      "ID": "669377",
+      "Author": "AGES Digital Library",
+      "Title": "The Holy Bible - Old Testament - King James Version",
+      "Publisher": "AGES Digital Library",
+      "Year": "1996",
+      "Pages": "1955",
+      "Language": "English",
+      "Size": "3 Mb",
+      "Extension": "pdf",
+      "Mirror_1": "http://library.lol/main/176B8EDE1041E0A00A6B01ED0928F5EC",
+      "Mirror_2": "http://libgen.li/ads.php?md5=176B8EDE1041E0A00A6B01ED0928F5EC",
+      "Mirror_3": "https://library.bz/main/edit/176B8EDE1041E0A00A6B01ED0928F5EC"
+    },
+    {
+      "ID": "681926",
+      "Author": "Alexander W. McClure",
+      "Title": "The Translators Revived; A Biographical Memoir of the Authors of the English Version of the Holy Bible",
+      "Publisher": "Greyden Press",
+      "Year": "1999",
+      "Pages": "",
+      "Language": "English",
+      "Size": "347 Kb",
+      "Extension": "epub",
+      "Mirror_1": "http://library.lol/main/BF551A1BBAB16DA568059ABB2D43CE1F",
+      "Mirror_2": "http://libgen.li/ads.php?md5=BF551A1BBAB16DA568059ABB2D43CE1F",
+      "Mirror_3": "https://library.bz/main/edit/BF551A1BBAB16DA568059ABB2D43CE1F"
+    },
+    {
+      "ID": "724964",
+      "Author": "Crossway Bibles",
+      "Title": "The Holy Bible, English Standard Version",
+      "Publisher": "Crossway",
+      "Year": "2011",
+      "Pages": "",
+      "Language": "English",
+      "Size": "4 Mb",
+      "Extension": "epub",
+      "Mirror_1": "http://library.lol/main/0A3D3164496149ED0F97C75A16CEDBEB",
+      "Mirror_2": "http://libgen.li/ads.php?md5=0A3D3164496149ED0F97C75A16CEDBEB",
+      "Mirror_3": "https://library.bz/main/edit/0A3D3164496149ED0F97C75A16CEDBEB"
+    },
+    {
+      "ID": "725857",
+      "Author": "Zondervan",
+      "Title": "Holy Bible (NIV)",
+      "Publisher": "Zondervan",
+      "Year": "2010",
+      "Pages": "",
+      "Language": "English",
+      "Size": "4 Mb",
+      "Extension": "mobi",
+      "Mirror_1": "http://library.lol/main/0DBFF19D96C3A6F5E06CFC291CE02BF7",
+      "Mirror_2": "http://libgen.li/ads.php?md5=0DBFF19D96C3A6F5E06CFC291CE02BF7",
+      "Mirror_3": "https://library.bz/main/edit/0DBFF19D96C3A6F5E06CFC291CE02BF7"
+    },
+    {
+      "ID": "733293",
+      "Author": "Alan Dundes",
+      "Title": "Holy Writ as Oral Lit: The Bible as Folklore",
+      "Publisher": "Rowman & Littlefield",
+      "Year": "1999",
+      "Pages": "131[149]",
+      "Language": "English",
+      "Size": "8 Mb",
+      "Extension": "pdf",
+      "Mirror_1": "http://library.lol/main/2AC0E4F30F7A939265CAF746501B803B",
+      "Mirror_2": "http://libgen.li/ads.php?md5=2AC0E4F30F7A939265CAF746501B803B",
+      "Mirror_3": "https://library.bz/main/edit/2AC0E4F30F7A939265CAF746501B803B"
+    },
+    {
+      "ID": "740383",
+      "Author": "Thomas Nelson",
+      "Title": "Holy Bible, New King James Version (NKJV)",
+      "Publisher": "Thomas Nelson",
+      "Year": "2009",
+      "Pages": "",
+      "Language": "English",
+      "Size": "3 Mb",
+      "Extension": "epub",
+      "Mirror_1": "http://library.lol/main/472337A2C0D1E81F4A9F705D1618F119",
+      "Mirror_2": "http://libgen.li/ads.php?md5=472337A2C0D1E81F4A9F705D1618F119",
+      "Mirror_3": "https://library.bz/main/edit/472337A2C0D1E81F4A9F705D1618F119"
+    },
+    {
+      "ID": "750222",
+      "Author": "Zondervan",
+      "Title": "Holy Bible (NIV)",
+      "Publisher": "Zondervan",
+      "Year": "2010",
+      "Pages": "",
+      "Language": "English",
+      "Size": "2 Mb",
+      "Extension": "epub",
+      "Mirror_1": "http://library.lol/main/6E9F8EC73620E90B861A92F15D4B5A23",
+      "Mirror_2": "http://libgen.li/ads.php?md5=6E9F8EC73620E90B861A92F15D4B5A23",
+      "Mirror_3": "https://library.bz/main/edit/6E9F8EC73620E90B861A92F15D4B5A23"
+    },
+    {
+      "ID": "767356",
+      "Author": "George W. Van Tassel",
+      "Title": "Into This World and Out Again: A modern proof of the origin of humanity and its retrogression from the original creation of man. Verified by the Holy Bible ... received through thought communication",
+      "Publisher": "G.W. Van Tassel",
+      "Year": "1956",
+      "Pages": "50",
+      "Language": "English",
+      "Size": "19 Mb",
+      "Extension": "pdf",
+      "Mirror_1": "http://library.lol/main/B4240630E345064795FA606384ED5A74",
+      "Mirror_2": "http://libgen.li/ads.php?md5=B4240630E345064795FA606384ED5A74",
+      "Mirror_3": "https://library.bz/main/edit/B4240630E345064795FA606384ED5A74"
+    },
+    {
+      "ID": "771632",
+      "Author": "Crossway Bibles",
+      "Title": "The Holy Bible, English Standard Version",
+      "Publisher": "Crossway",
+      "Year": "2011",
+      "Pages": "",
+      "Language": "English",
+      "Size": "4 Mb",
+      "Extension": "mobi",
+      "Mirror_1": "http://library.lol/main/C5522B137046F77386BB147A38BEB330",
+      "Mirror_2": "http://libgen.li/ads.php?md5=C5522B137046F77386BB147A38BEB330",
+      "Mirror_3": "https://library.bz/main/edit/C5522B137046F77386BB147A38BEB330"
+    },
+    {
+      "ID": "780379",
+      "Author": "Steve Ward",
+      "Title": "Holy Enigma!: Bible Verses You'll Never Hear In Sunday School",
+      "Publisher": "Hamilton Books",
+      "Year": "2004",
+      "Pages": "",
+      "Language": "English",
+      "Size": "271 Kb",
+      "Extension": "epub",
+      "Mirror_1": "http://library.lol/main/E8DF1AE6FD6046DABCB5083DA91197AE",
+      "Mirror_2": "http://libgen.li/ads.php?md5=E8DF1AE6FD6046DABCB5083DA91197AE",
+      "Mirror_3": "https://library.bz/main/edit/E8DF1AE6FD6046DABCB5083DA91197AE"
+    }
+  ]
+}
+02-Dec-23 10:00:38 - search_book_bot | 
+Title: The Trinity in the Name of God, Elohim - Jesus Holy Spirit Jewish Messiah Bible
+
+Author : 
+
+Year: 
+
+Extension: doc
+
+Direct Download Links:
+
+
+02-Dec-23 10:00:41 - next_btn | Getting next result..
+02-Dec-23 10:00:41 - next_btn | Got next result!
+02-Dec-23 10:00:41 - next_btn | 
+Title: Holy Bible - Old & New Testaments (King James)
+
+Author : 
+
+Year: 
+
+Extension: pdf
+
+Direct Download Links:
+
+
+02-Dec-23 10:00:44 - next_btn | Getting next result..
+02-Dec-23 10:00:45 - next_btn | Got next result!
+02-Dec-23 10:00:45 - next_btn | 
+Title: Diary of a Wimpy Kid
+
+Author : Jeff Kinney
+
+Year: 2012
+
+Extension: mobi
+
+Direct Download Links:
+
+
