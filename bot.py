@@ -82,6 +82,8 @@ def search_book_bot(message):
 
     user_name = message.from_user.username
     user_id = str(message.from_user.id)
+    chat_id = str(message.chat.id)
+    message_id = message.message_id
 
     query_lst = message.text.split()
     query_lst = query_lst[1:]
@@ -97,10 +99,14 @@ def search_book_bot(message):
         search.reset(user_id)
         search.initialize_records(user_id)
 
-        reply = f"Here are the results. @{user_name}"
-        bot.reply_to(message, reply)
+        reply = "_Please wait, results are being fetched_"
+        bot.reply_to(message, reply, parse_mode='Markdown')
 
-        reply_text, download_links = search.get_records(0, user_id)
+        reply_text, download_links, pointer = search.get_records(0, user_id)
+        bot.edit_message_text(text=f"Here are the results. @{user_name}",
+                              chat_id=chat_id,
+                              message_id=message_id+1)
+
         markup = types.InlineKeyboardMarkup(row_width=1)
         download_buttons = [
             types.InlineKeyboardButton("GET", url=download_links["GET"]),
@@ -110,10 +116,11 @@ def search_book_bot(message):
         ]
         next_button = types.InlineKeyboardButton(
             "Next ⏩", callback_data="Next")
-        markup.add(*download_buttons)
+        markup.add(*download_buttons, row_width=3)
         markup.add(next_button, row_width=1)
         logging.info(f"{search_book_bot.__name__} | {reply_text}")
-        bot.send_message(message.chat.id, reply_text, reply_markup=markup)
+        bot.send_message(message.chat.id, reply_text,
+                         reply_markup=markup, parse_mode='Markdown')
     else:
         bot.send_message(message.chat.id, "Enter a query!")
 
@@ -125,7 +132,7 @@ def search_book_bot(message):
         user_id = str(call.from_user.id)
 
         logging.info(f"{next_btn.__name__} | Getting next result..")
-        reply_text, download_links = search.get_records(1, user_id)
+        reply_text, download_links, pointer = search.get_records(1, user_id)
         if download_links != None:
             markup = types.InlineKeyboardMarkup(row_width=1)
             download_buttons = [
@@ -135,16 +142,20 @@ def search_book_bot(message):
                 types.InlineKeyboardButton(
                     "IPFS", url=download_links["IPFS.io"])
             ]
+
             next_button = types.InlineKeyboardButton(
                 "Next ⏩", callback_data="Next")
             back_button = types.InlineKeyboardButton(
                 "Back 🔙", callback_data="Back")
-            markup.add(*download_buttons)
-            markup.add(back_button, next_button, row_width=2)
+            markup.add(*download_buttons, row_width=3)
+            if pointer >= len(record_pool[user_id])-1:
+                markup.add(back_button, row_width=1)
+            else:
+                markup.add(back_button, next_button, row_width=2)
             logging.info(f"{next_btn.__name__} | Got next result!")
             logging.info(f"{next_btn.__name__} | {reply_text}")
             bot.edit_message_text(text=reply_text, chat_id=call.message.chat.id,
-                                  message_id=call.message.message_id, reply_markup=markup)
+                                  message_id=call.message.message_id, reply_markup=markup, parse_mode='Markdown')
         else:
             markup = types.InlineKeyboardMarkup(row_width=1)
             back_button = types.InlineKeyboardButton(
@@ -152,7 +163,7 @@ def search_book_bot(message):
             markup.add(back_button, row_width=1)
             logging.info(f"{next_btn.__name__} | {reply_text}")
             bot.edit_message_text(text=reply_text, chat_id=call.message.chat.id,
-                                  message_id=call.message.message_id, reply_markup=markup)
+                                  message_id=call.message.message_id, reply_markup=markup, parse_mode='Markdown')
 
     @bot.callback_query_handler(func=lambda call: call.data == "Back")
     def back_btn(call):
@@ -162,7 +173,7 @@ def search_book_bot(message):
         user_id = str(call.from_user.id)
 
         logging.info(f"{back_btn.__name__} | Getting previous result..")
-        reply_text, download_links = search.get_records(-1, user_id)
+        reply_text, download_links, pointer = search.get_records(-1, user_id)
         if download_links != None:
             markup = types.InlineKeyboardMarkup(row_width=1)
             download_buttons = [
@@ -172,16 +183,20 @@ def search_book_bot(message):
                 types.InlineKeyboardButton(
                     "IPFS", url=download_links["IPFS.io"])
             ]
+
             next_button = types.InlineKeyboardButton(
                 "Next ⏩", callback_data="Next")
             back_button = types.InlineKeyboardButton(
                 "Back 🔙", callback_data="Back")
-            markup.add(*download_buttons)
-            markup.add(back_button, next_button, row_width=2)
+            markup.add(*download_buttons, row_width=3)
+            if pointer <= 0:
+                markup.add(next_button, row_width=1)
+            else:
+                markup.add(back_button, next_button, row_width=2)
             logging.info(f"{back_btn.__name__} | Got previous result!")
             logging.info(reply_text)
             bot.edit_message_text(text=reply_text, chat_id=call.message.chat.id,
-                                  message_id=call.message.message_id, reply_markup=markup)
+                                  message_id=call.message.message_id, reply_markup=markup, parse_mode='Markdown')
         else:
             markup = types.InlineKeyboardMarkup(row_width=1)
             next_button = types.InlineKeyboardButton(
@@ -189,7 +204,7 @@ def search_book_bot(message):
             markup.add(next_button, row_width=1)
             logging.info(f"{back_btn.__name__} | {reply_text}")
             bot.edit_message_text(text=reply_text, chat_id=call.message.chat.id,
-                                  message_id=call.message.message_id, reply_markup=markup)
+                                  message_id=call.message.message_id, reply_markup=markup, parse_mode='Markdown')
 
 
 @bot.message_handler(commands=['clear'])

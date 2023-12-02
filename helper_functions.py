@@ -36,68 +36,66 @@ class Records:
         """
 
         if flag == 0:
-            self.reply_text = self.get_formatted_text(0, uid)
+            logging.info(f"Current pointer (START) : {self.pointer}")
+            self.reply_text = self.get_formatted_text(uid)
             self.download_links = self.libgen.resolve_download_links(
                 self.records[uid][0])
-            return self.reply_text, self.download_links
+            return self.reply_text, self.download_links, self.pointer
 
         elif flag == -1:
             self.pointer -= 1
+            logging.info(f"Current pointer : {self.pointer}")
 
-            if self.pointer > 0:
-                self.reply_text = self.get_formatted_text(1, uid)
+            if self.pointer >= 0:
+                self.reply_text = self.get_formatted_text(uid)
                 self.download_links = self.libgen.resolve_download_links(
                     self.records[uid][self.pointer])
-                return self.reply_text, self.download_links
+                return self.reply_text, self.download_links, self.pointer
 
             else:
                 logging.info(
                     f"{self.get_records.__name__} | No more previous records.")
                 self.reply_text = "No more previous records!"
                 self.download_links = None
-                return self.reply_text, self.download_links
+                return self.reply_text, self.download_links, self.pointer
 
         elif flag == 1:
             self.pointer += 1
+            logging.info(f"Current pointer : {self.pointer}")
 
-            if self.pointer < len(self.records[uid]):
-                self.reply_text = self.get_formatted_text(1, uid)
+            if self.pointer <= len(self.records[uid])-1:
+                self.reply_text = self.get_formatted_text(uid)
                 self.download_links = self.libgen.resolve_download_links(
                     self.records[uid][self.pointer])
-                return self.reply_text, self.download_links
+                return self.reply_text, self.download_links, self.pointer
 
             else:
                 logging.info(f"{self.get_records.__name__} | No more records!")
                 self.reply_text = "No more next records!"
                 self.download_links = None
-                return self.reply_text, self.download_links
+                return self.reply_text, self.download_links, self.pointer
         else:
             logging.warning("Invalid flag!")
 
-    def get_formatted_text(self, flag: int, uid: str) -> str:
+    def get_formatted_text(self, uid: str) -> str:
         """
         Get the formatted text 
         """
+        title = self.records[uid][self.pointer]['Title']
+        author = self.records[uid][self.pointer]['Author']
+        year = self.records[uid][self.pointer]['Year']
+        ext = self.records[uid][self.pointer]['Extension']
 
-        formatted_text = ""
-        if flag == 0:
-            formatted_text = f"""
-Title: {self.records[uid][0]['Title']}\n
-Author : {self.records[uid][0]['Author']}\n
-Year: {self.records[uid][0]['Year']}\n
-Extension: {self.records[uid][0]['Extension']}\n
-Direct Download Links:\n
-"""
-            return formatted_text
-        else:
-            formatted_text = f"""
-Title: {self.records[uid][self.pointer]['Title']}\n
-Author : {self.records[uid][self.pointer]['Author']}\n
-Year: {self.records[uid][self.pointer]['Year']}\n
-Extension: {self.records[uid][self.pointer]['Extension']}\n
-Direct Download Links:\n
-"""
-            return formatted_text
+        formatted_text = f"*RESULTS [{self.pointer+1}/{len(self.records[uid])}]*\n➖➖➖➖➖➖\n*Title*: _{title}_"
+
+        if author:
+            formatted_text += f"\n\n*Author* : _{author}_"
+        if year:
+            formatted_text += f"\n*Year* : _{year}_"
+        if ext:
+            formatted_text += f"\n*Extension* : _{ext}_"
+
+        return formatted_text
 
     def reset(self, uid: str) -> None:
         """
