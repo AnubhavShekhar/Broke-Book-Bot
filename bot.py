@@ -129,6 +129,7 @@ def search_book_bot(message):
         """
         Get next records if it exists else alert user that there are no more next records.
         """
+        bot.answer_callback_query(call.id)
         user_id = str(call.from_user.id)
 
         logging.info(f"{next_btn.__name__} | Getting next result..")
@@ -170,6 +171,7 @@ def search_book_bot(message):
         """
         Get previous record if it exists else alert user that there are no more previous records.
         """
+        bot.answer_callback_query(call.id)
         user_id = str(call.from_user.id)
 
         logging.info(f"{back_btn.__name__} | Getting previous result..")
