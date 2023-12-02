@@ -10,7 +10,7 @@ class Records:
 
         self.query = query
         self.libgen = LibgenSearch()
-        self.records = []
+        self.record = []
         self.formatted_records = []
         self.download_links = []
         self.reply_text = ""
@@ -22,9 +22,9 @@ class Records:
         Creates a list of dictionaries of the query results
         """
 
-        self.records = self.libgen.search_title(self.query)
+        self.record = self.libgen.search_title(self.query)
         logging.info(f"{self.initialize_records.__name__} | Records initialized")
-        logging.info(self.records)
+        logging.info(self.record)
 
     def get_records(self, flag: int) -> [str, list]:
         """
@@ -36,8 +36,7 @@ class Records:
         if flag == 0:
             self.reply_text = self.get_formatted_text(0)
             self.download_links = self.libgen.resolve_download_links(
-                self.records[0])
-            self.pointer += 1
+                self.record[0])
             return self.reply_text, self.download_links
 
         elif flag == -1:
@@ -46,7 +45,7 @@ class Records:
             if self.pointer > 0:
                 self.reply_text = self.get_formatted_text(1)
                 self.download_links = self.libgen.resolve_download_links(
-                    self.records[self.pointer])
+                    self.record[self.pointer])
                 return self.reply_text, self.download_links
 
             else:
@@ -58,10 +57,10 @@ class Records:
         elif flag == 1:
             self.pointer += 1
 
-            if self.pointer < len(self.records):
+            if self.pointer < len(self.record):
                 self.reply_text = self.get_formatted_text(1)
                 self.download_links = self.libgen.resolve_download_links(
-                    self.records[self.pointer])
+                    self.record[self.pointer])
                 return self.reply_text, self.download_links
 
             else:
@@ -80,19 +79,19 @@ class Records:
         formatted_text = ""
         if flag == 0:
             formatted_text = f"""
-Title: {self.records[self.pointer]['Title']}\n
-Author : {self.records[self.pointer]['Author']}\n
-Year: {self.records[self.pointer]['Year']}\n
-Extension: {self.records[self.pointer]['Extension']}\n
+Title: {self.record[0]['Title']}\n
+Author : {self.record[0]['Author']}\n
+Year: {self.record[0]['Year']}\n
+Extension: {self.record[0]['Extension']}\n
 Direct Download Links:\n
 """
             return formatted_text
         else:
             formatted_text = f"""
-Title: {self.records[self.pointer]['Title']}\n
-Author : {self.records[self.pointer]['Author']}\n
-Year: {self.records[self.pointer]['Year']}\n
-Extension: {self.records[self.pointer]['Extension']}\n
+Title: {self.record[self.pointer]['Title']}\n
+Author : {self.record[self.pointer]['Author']}\n
+Year: {self.record[self.pointer]['Year']}\n
+Extension: {self.record[self.pointer]['Extension']}\n
 Direct Download Links:\n
 """
             return formatted_text
@@ -105,8 +104,8 @@ Direct Download Links:\n
         self.pointer = 0
         logging.info(f"{self.reset.__name__} | Pointer reset! | {self.pointer}")
 
-        self.records.clear()
-        logging.info(f"{self.reset.__name__} | Records cleared! | {self.records}")
+        self.record.clear()
+        logging.info(f"{self.reset.__name__} | Records cleared! | {self.record}")
 
         self.download_links.clear()
         logging.info(f"{self.reset.__name__} | Download links cleared! | {self.download_links}")
