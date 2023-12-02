@@ -99,7 +99,8 @@ def search_book_bot(message):
 
     if len(query) > 0:
 
-        logging.info(f"{search_book_bot.__name__} | Querying {query}...")
+        logging.info(
+            f"{user_id} | {search_book_bot.__name__} | Querying {query}...")
         search = LibgenRecords(query, record_pool, pointer_pool)
         search.reset(user_id)
         search.initialize_records(user_id)
@@ -123,7 +124,7 @@ def search_book_bot(message):
             "Next ⏩", callback_data="Next")
         markup.add(*download_buttons, row_width=3)
         markup.add(next_button, row_width=1)
-        logging.info(f"{search_book_bot.__name__} | {reply_text}")
+        logging.info(f"{user_id} | {search_book_bot.__name__} | {reply_text}")
         bot.send_message(message.chat.id, reply_text,
                          reply_markup=markup, parse_mode='Markdown')
     else:
@@ -137,7 +138,8 @@ def search_book_bot(message):
         bot.answer_callback_query(call.id)
         user_id = str(call.from_user.id)
 
-        logging.info(f"{next_btn.__name__} | Getting next result..")
+        logging.info(
+            f"{user_id} | {next_btn.__name__} | Getting next result..")
         reply_text, download_links = search.get_records(1, user_id)
         if download_links != None:
             markup = types.InlineKeyboardMarkup(row_width=1)
@@ -158,8 +160,8 @@ def search_book_bot(message):
                 markup.add(back_button, row_width=1)
             else:
                 markup.add(back_button, next_button, row_width=2)
-            logging.info(f"{next_btn.__name__} | Got next result!")
-            logging.info(f"{next_btn.__name__} | {reply_text}")
+            logging.info(f"{user_id} | {next_btn.__name__} | Got next result!")
+            logging.info(f"{user_id} | {next_btn.__name__} | {reply_text}")
             bot.edit_message_text(text=reply_text, chat_id=call.message.chat.id,
                                   message_id=call.message.message_id, reply_markup=markup, parse_mode='Markdown')
         else:
@@ -167,7 +169,7 @@ def search_book_bot(message):
             back_button = types.InlineKeyboardButton(
                 "Back 🔙", callback_data="Back")
             markup.add(back_button, row_width=1)
-            logging.info(f"{next_btn.__name__} | {reply_text}")
+            logging.info(f"{user_id} | {next_btn.__name__} | {reply_text}")
             bot.edit_message_text(text=reply_text, chat_id=call.message.chat.id,
                                   message_id=call.message.message_id, reply_markup=markup, parse_mode='Markdown')
 
@@ -179,7 +181,8 @@ def search_book_bot(message):
         bot.answer_callback_query(call.id)
         user_id = str(call.from_user.id)
 
-        logging.info(f"{back_btn.__name__} | Getting previous result..")
+        logging.info(
+            f"{user_id} | {back_btn.__name__} | Getting previous result..")
         reply_text, download_links = search.get_records(-1, user_id)
         if download_links != None:
             markup = types.InlineKeyboardMarkup(row_width=1)
@@ -200,7 +203,8 @@ def search_book_bot(message):
                 markup.add(next_button, row_width=1)
             else:
                 markup.add(back_button, next_button, row_width=2)
-            logging.info(f"{back_btn.__name__} | Got previous result!")
+            logging.info(
+                f"{user_id} | {back_btn.__name__} | Got previous result!")
             logging.info(reply_text)
             bot.edit_message_text(text=reply_text, chat_id=call.message.chat.id,
                                   message_id=call.message.message_id, reply_markup=markup, parse_mode='Markdown')
@@ -209,7 +213,7 @@ def search_book_bot(message):
             next_button = types.InlineKeyboardButton(
                 "Next ⏩", callback_data="Next")
             markup.add(next_button, row_width=1)
-            logging.info(f"{back_btn.__name__} | {reply_text}")
+            logging.info(f"{user_id} | {back_btn.__name__} | {reply_text}")
             bot.edit_message_text(text=reply_text, chat_id=call.message.chat.id,
                                   message_id=call.message.message_id, reply_markup=markup, parse_mode='Markdown')
 
@@ -231,7 +235,7 @@ def clear_logs(message):
         bot.reply_to(message, reply)
     else:
         logging.info(
-            f"{clear_logs.__name__} | Log file clearing unsuccesful {user_name} | {user_id} not a ADMIN")
+            f"{user_id} | {clear_logs.__name__} | Log file clearing unsuccesful {user_name} | {user_id} not a ADMIN")
         clear_gif = "https://media.giphy.com/media/pUUcydt2WxjSXgYIoK/giphy.gif"
         bot.send_animation(message.chat.id, clear_gif,
                            caption="Come back when you are an ADMIN")
