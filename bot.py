@@ -2,16 +2,22 @@ import os
 import telebot
 from dotenv import load_dotenv
 from telebot import types
-from libgen_api import LibgenSearch
-from icecream import ic
 from helper_functions import Records
 from random import choice
 import logging
 
-load_dotenv()
+load_dotenv() 
+
+"""
+Setting environment variables
+"""
 
 API_TOKEN = os.getenv('API_KEY')
 ADMIN_ID = os.getenv("ADMIN_ID")
+
+"""
+Configuring log files
+"""
 
 tg_logger = logging.getLogger('TeleBot')
 tg_logger.setLevel(logging.WARNING)
@@ -24,9 +30,13 @@ bot = telebot.TeleBot(API_TOKEN)
 
 @bot.message_handler(commands= ["start"])
 def start_book_bot(message):
+    """
+    Initializing menu commands
+    """
+
     user_name = message.from_user.username
     user_id = str(message.from_user.id)
-    logging.info(f"{user_name} | {user_id} has started the bot!")
+    logging.info(f"{start_book_bot.__name__} | {user_name} | {user_id} has started the bot!")
 
     gifs = ["https://media.giphy.com/media/Vbtc9VG51NtzT1Qnv1/giphy.gif","https://media.giphy.com/media/xTiIzJSKB4l7xTouE8/giphy.gif","https://media.giphy.com/media/mW05nwEyXLP0Y/giphy.gif"]
     reply = f"Hello there @{user_name}, Broke ass nigga.\n I shall bestow upon you, Knowledge.🤯"
@@ -39,7 +49,7 @@ def start_book_bot(message):
     button5 = types.BotCommand(command="clear", description="clear the log file")
     bot.set_my_commands([button1, button2, button3, button4, button5])
     bot.set_chat_menu_button(message.chat.id, types.MenuButtonCommands("commands"))
-    logging.info("Menu Commands have been initialized.")
+    logging.info(f"{start_book_bot.__name__} | Menu Commands have been initialized.")
 
 
 @bot.message_handler(commands=["help"])
@@ -49,14 +59,20 @@ def help_book_bot(message):
 
 @bot.message_handler(commands=['search'])
 def search_book_bot(message):
+    """
+    Get the records of the given query and display them along with download buttons and button to go to next record.
+    Alert user if they did not enter a query.
+    """
+
     user_name = message.from_user.username
     user_id = str(message.from_user.id)
 
     query_lst = message.text.split()
     query_lst = query_lst[1:]
     query = " ".join(query_lst)
+    
     if len(query) > 0:
-        logging.info(f"Querying {query}...")
+        logging.info(f"{search_book_bot.__name__} | Querying {query}...")
         search = Records(query)
         search.reset()
         search.initialize_records()
@@ -72,63 +88,89 @@ def search_book_bot(message):
             types.InlineKeyboardButton("IPFS", url=download_links["IPFS.io"])
         ]
         next_button = types.InlineKeyboardButton("Next ⏩", callback_data="Next")
-        back_button = types.InlineKeyboardButton("Back 🔙", callback_data="Back")
         markup.add(*download_buttons)
-        markup.add(back_button, next_button, row_width=2)
-        logging.info(reply_text)
+        markup.add(next_button, row_width=1)
+        logging.info(f"{search_book_bot.__name__} | {reply_text}")
         bot.send_message(message.chat.id, reply_text, reply_markup=markup)
     else:
         bot.send_message(message.chat.id, "Enter a query!")
 
     @bot.callback_query_handler(func= lambda call: call.data == "Next")
-    def next_button(call):
-        logging.info("Getting next result..")
+    def next_btn(call):
+        """
+        Get next records if it exists else alert user that there are no more next records.
+        """
+
+        logging.info(f"{next_btn.__name__} | Getting next result..")
         reply_text, download_links = search.get_records(1)
-        markup = types.InlineKeyboardMarkup(row_width=1)
-        download_buttons = [
-            types.InlineKeyboardButton("GET", url=download_links["GET"]),
-            types.InlineKeyboardButton("Cloudflare", url=download_links["Cloudflare"]),
-            types.InlineKeyboardButton("IPFS", url=download_links["IPFS.io"])
-        ]
-        next_button = types.InlineKeyboardButton("Next ⏩", callback_data="Next")
-        back_button = types.InlineKeyboardButton("Back 🔙", callback_data="Back")
-        markup.add(*download_buttons)
-        markup.add(back_button, next_button, row_width=2)
-        logging.info("Got next result!")
-        logging.info(reply_text)
-        bot.edit_message_text(text=reply_text, chat_id=call.message.chat.id, message_id=call.message.message_id, reply_markup=markup)
+        if download_links != None:
+            markup = types.InlineKeyboardMarkup(row_width=1)
+            download_buttons = [
+                types.InlineKeyboardButton("GET", url=download_links["GET"]),
+                types.InlineKeyboardButton("Cloudflare", url=download_links["Cloudflare"]),
+                types.InlineKeyboardButton("IPFS", url=download_links["IPFS.io"])
+            ]
+            next_button = types.InlineKeyboardButton("Next ⏩", callback_data="Next")
+            back_button = types.InlineKeyboardButton("Back 🔙", callback_data="Back")
+            markup.add(*download_buttons)
+            markup.add(back_button, next_button, row_width=2)
+            logging.info(f"{next_btn.__name__} | Got next result!")
+            logging.info(f"{next_btn.__name__} | {reply_text}")
+            bot.edit_message_text(text=reply_text, chat_id=call.message.chat.id, message_id=call.message.message_id, reply_markup=markup)
+        else:
+            markup = types.InlineKeyboardMarkup(row_width=1)
+            back_button = types.InlineKeyboardButton("Back 🔙", callback_data="Back")
+            markup.add(back_button, row_width=1)
+            logging.info(f"{next_btn.__name__} | {reply_text}")
+            bot.edit_message_text(text=reply_text, chat_id=call.message.chat.id, message_id=call.message.message_id, reply_markup=markup)
 
     @bot.callback_query_handler(func= lambda call: call.data == "Back")
-    def back_button(call):
-        logging.info("Getting previous result..")
+    def back_btn(call):
+        """
+        Get previous record if it exists else alert user that there are no more previous records.
+        """
+
+        logging.info(f"{back_btn.__name__} | Getting previous result..")
         reply_text, download_links = search.get_records(-1)
-        markup = types.InlineKeyboardMarkup(row_width=1)
-        download_buttons = [
-            types.InlineKeyboardButton("GET", url=download_links["GET"]),
-            types.InlineKeyboardButton("Cloudflare", url=download_links["Cloudflare"]),
-            types.InlineKeyboardButton("IPFS", url=download_links["IPFS.io"])
-        ]
-        next_button = types.InlineKeyboardButton("Next ⏩", callback_data="Next")
-        back_button = types.InlineKeyboardButton("Back 🔙", callback_data="Back")
-        markup.add(*download_buttons)
-        markup.add(back_button, next_button, row_width=2)
-        logging.info("Got previous result!")
-        logging.info(reply_text)
-        bot.edit_message_text(text=reply_text, chat_id=call.message.chat.id, message_id=call.message.message_id, reply_markup=markup)
+        if download_links != None:
+            markup = types.InlineKeyboardMarkup(row_width=1)
+            download_buttons = [
+                types.InlineKeyboardButton("GET", url=download_links["GET"]),
+                types.InlineKeyboardButton("Cloudflare", url=download_links["Cloudflare"]),
+                types.InlineKeyboardButton("IPFS", url=download_links["IPFS.io"])
+            ]
+            next_button = types.InlineKeyboardButton("Next ⏩", callback_data="Next")
+            back_button = types.InlineKeyboardButton("Back 🔙", callback_data="Back")
+            markup.add(*download_buttons)
+            markup.add(back_button, next_button, row_width=2)
+            logging.info(f"{back_btn.__name__} | Got previous result!")
+            logging.info(reply_text)
+            bot.edit_message_text(text=reply_text, chat_id=call.message.chat.id, message_id=call.message.message_id, reply_markup=markup)
+        else:
+            markup = types.InlineKeyboardMarkup(row_width=1)
+            next_button = types.InlineKeyboardButton("Next ⏩", callback_data="Next")
+            markup.add(next_button, row_width=1)
+            logging.info(f"{back_btn.__name__} | {reply_text}")
+            bot.edit_message_text(text=reply_text, chat_id=call.message.chat.id, message_id=call.message.message_id, reply_markup=markup)
+
 
 
 @bot.message_handler(commands=['clear'])
 def clear_logs(message):
+    """
+    Clears the log file
+    """
+
     user_name = message.from_user.username
     user_id = str(message.from_user.id)
     if user_id == ADMIN_ID:
         with open("status.log", "w"):
             pass
-        logging.info(f"{user_name} | {user_id} cleared the logs.")
+        logging.info(f"{clear_logs.__name__} | {user_name} | {user_id} cleared the logs.")
         reply = f"The log file has been cleared. @{user_name}"
         bot.reply_to(message, reply)
     else:
-        logging.info(f"Log file clearing unsuccesful {user_name} | {user_id} not a ADMIN")
+        logging.info(f"{clear_logs.__name__} | Log file clearing unsuccesful {user_name} | {user_id} not a ADMIN")
         clear_gif = "https://media.giphy.com/media/pUUcydt2WxjSXgYIoK/giphy.gif"
         bot.send_animation(message.chat.id, clear_gif, caption="Come back when you are an ADMIN" )
 
